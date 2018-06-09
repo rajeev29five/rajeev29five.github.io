@@ -7,6 +7,10 @@ layout: default
 
 **mkdir** stands for make directory. A directory is a folder. Command creates directory(ies), if they do not already exist.
 
+**mkdir** takes the following form.
+
+> mkdir _OPTIONS_ nameOfDirectory
+
 ```
 example
 ```
@@ -15,6 +19,10 @@ example
 
 **ls** stands for list. Lists the contents of directory(files and subdirectory(ies)) with additional information. 
 
+**ls** takes the following form.
+
+> ls _OPTIONS_ namofDirectory
+ 
 ```
 example
 ```
@@ -23,10 +31,13 @@ example
 
 An empty file that does not exist is created.
 
+**touch** takes the following form.
+
+> touch _OPTIONS_ nameOfFile
+
 ```
 example
 ```
-
 
 ## 4. cd
 
@@ -38,81 +49,40 @@ example
 
 ## 5. pwd
 
-**pwd** prints the current working directory.
+**pwd** prints absolute pathname of the current working directory. 
+
 
 ```
 example
 ```
 
-## 6. 
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+## 6. chmod
 
 
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+example
 ```
 
+
+## 7. head
+
+
+Prints the first 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied, then **`n`** number of lines are printed to standard output.
+
+
 ```
-The final element.
+example
 ```
+
+
+## 8. tail
+
+**tail** prints the last 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied, then **n** number of lines are printed to standard output.
+
+
+```
+example
+```
+

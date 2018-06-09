@@ -90,6 +90,7 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
+  font-family: palatino;
 }
 
 footer p {
@@ -128,6 +129,8 @@ em, cite {
 
 strong {
   font-weight: bold;
+  font-size: 15px;
+  font-family: initial;
 }
 
 img {
@@ -167,7 +170,7 @@ pre, code {
 }
 
 pre {
-  padding: 10px;
+  padding: 32px 0.5px 3px 1px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   overflow: auto;
 }
@@ -181,13 +184,16 @@ code {
 pre code {
   display: block;
   box-shadow: none;
+  background-color: yellowgreen;
 }
 
-blockquote {
+blockquote p{
   color: #666;
   margin-bottom: 20px;
   padding: 0 0 0 20px;
   border-left: 3px solid #bbb;
+  background-color: #d8d7d7;
+  font-family: monospace;
 }
 
 
