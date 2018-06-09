@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+---
 
 ## 1. mkdir
 
