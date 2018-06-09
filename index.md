@@ -2,54 +2,49 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+## 1. mkdir
 
-There should be whitespace between paragraphs.
+**mkdir** stands for make directory. A directory is a folder. Command creates directory(ies), if they do not already exist.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+```
+example
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+## 2. ls
+
+**ls** stands for list. Lists the contents of directory(files and subdirectory(ies)) with additional information. 
+
+```
+example
 ```
 
-#### Header 4
+## 3. touch
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+An empty file that does not exist is created.
 
-##### Header 5
+```
+example
+```
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
 
-###### Header 6
+## 4. cd
+
+**cd** stands for change directory. Used to traverse directory(ies). If name of directory is not supplied, working directory is changed to root or home. If **`..`** is supplied, working directory is set to immediate previous of current working directory. If **`-`** is supplied old working directory is set to current working directory, if the directory change is successful, the absolute pathname of the new working directory is written to the standard  output.
+
+```
+example
+```
+
+## 5. pwd
+
+**pwd** prints the current working directory.
+
+```
+example
+```
+
+## 6. 
 
 | head1        | head two          | three |
 |:-------------|:------------------|:------|
