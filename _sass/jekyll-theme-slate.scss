@@ -170,7 +170,7 @@ pre, code {
 }
 
 pre {
-  padding: 32px 0.5px 3px 1px;
+  padding: 0px 0px 3px 0px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   overflow: auto;
 }
@@ -255,6 +255,13 @@ td {
 form {
   background: #f2f2f2;
   padding: 20px;
+}
+
+div span{
+  display: block;
+  font-family: monospace;
+  text-align: center;
+  color: white;
 }
 
 /*******************************************************************************
