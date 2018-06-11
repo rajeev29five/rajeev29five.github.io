@@ -257,16 +257,20 @@ form {
   padding: 20px;
 }
 
-div span{
-  display: block;
-  font-family: monospace;
-  text-align: center;
-  color: white;
-}
-
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
+
+.terminal {
+  margin: 10px 0px 0px 0px;
+  display: block;
+  text-align: center;
+  background: #514949;
+  color: white;
+  font-family: monospace;
+  border-radius: 5px 5px 0px 0px;
+}
+
 
 .outer {
   width: 100%;
