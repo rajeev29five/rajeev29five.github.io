@@ -15,6 +15,7 @@ username@localhost~$
 
 ```
 
+<br>
 A prompt has four parts.
 
 `username :`  Shows the username of current user. 
@@ -40,6 +41,7 @@ A prompt has four parts.
 username@localhost~$
 
 ```
+<br>
 
 ## 2. ls
 
@@ -54,6 +56,7 @@ username@localhost~$
 username@localhost~$
 
 ```
+<br>
 
 ## 3. touch
 
@@ -68,6 +71,7 @@ An empty file that does not exist is created.
 username@localhost~$
 
 ```
+<br>
 
 ## 4. cd
 
@@ -78,6 +82,7 @@ username@localhost~$
 username@localhost~$
 
 ```
+<br>
 
 ## 5. pwd
 
@@ -88,7 +93,7 @@ username@localhost~$
 username@localhost~$
 
 ```
-
+<br>
 
 ## 6. chmod
 
@@ -98,10 +103,9 @@ username@localhost~$
 username@localhost~$
 
 ```
-
+<br>
 
 ## 7. head
-
 
 Prints the first 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied, then **`n`** number of lines are printed to standard output.
 
@@ -110,7 +114,7 @@ Prints the first 10 lines of each file to standard output. In case more than one
 username@localhost~$
 
 ```
-
+<br>
 
 ## 8. tail
 
@@ -121,3 +125,4 @@ username@localhost~$
 username@localhost~$
 
 ```
+<br>
