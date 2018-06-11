@@ -15,13 +15,13 @@ username@localhost~$
 
 A prompt has four parts.
 
-`username` : Shows the username. 
+`username : `  Shows the username. 
 
-`hostname` : This is the name of your computer.
+`hostname : `  This is the name of your computer.
 
-`absolutepathname` : Shows the absolute path name of current working directory. In this case it is **home** directory represented by the symbol tilde(~).
+`absolutepathname : ` Shows the absolute path name of current working directory. In this case it is **home** directory represented by the symbol tilde(~).
 
-`currentuser` :	The shell prompt normally ends in a **$** sign which means that the user is logged in as normal user with restricted access to resources, while **#** indicates that you are logged in as **root** also know as **super user** and can access nearly all resources which is other wise accessible to few programs. 
+`currentuser : ` The shell prompt normally ends in a **$** sign which means that the user is logged in as normal user with restricted access to resources, while **#** indicates that you are logged in as **root** also know as **super user** and can access nearly all resources which is other wise accessible to few programs. 
 
 **NOTE :** You should avoid logging in as root unless necessary as it makes your system vulnerable.
 
