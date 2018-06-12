@@ -28,13 +28,18 @@ A prompt has four parts.
 
 **NOTE :** You should avoid logging in as root unless necessary as it makes your system vulnerable.
 
+## What is a command?
+A command is an instruction given to computer to do something, such as run a program or group of programs. These commands are given to computer by typing it in command-line or a terminal and then pressing ENTER key, which in turn will pass them to the shell. Most of the commands take the following form.
+
+> command_name OPTIONS arguments
+
 ## 1. mkdir
 
 **mkdir** stands for make directory. A directory is a folder. Command creates directory(ies), if they do not already exist.
 
 **mkdir** takes the following form.
 
-> mkdir _OPTIONS_ nameOfDirectory
+> mkdir _OPTIONS_ name_of_directory
 
 <p class="terminal">Terminal</p>
 ```
@@ -49,11 +54,14 @@ username@localhost~$
 
 **ls** takes the following form.
 
-> ls _OPTIONS_ namofDirectory
+> ls _OPTIONS_ arguments
 
 <p class="terminal">Terminal</p> 
 ```
-username@localhost~$
+username@localhost~$ ls
+Desktop	Downloads	Pictures	Templates
+Documents	Music		Public		Videos
+username@localhost~$ 
 
 ```
 <br>
@@ -64,7 +72,7 @@ An empty file that does not exist is created.
 
 **touch** takes the following form.
 
-> touch _OPTIONS_ nameOfFile
+> touch _OPTIONS_ name_of_file
 
 <p class="terminal">Terminal</p>
 ```
