@@ -3,6 +3,17 @@ layout: default
 ---
 ---
 
+## What is a command?
+A command is an instruction given to computer to do something, such as run a program or group of programs. These commands are given to computer by typing it in command-line or a terminal and then pressing ENTER key, which in turn will pass them to the shell. Most of the commands take the following form.
+
+> command [OPTIONS] additional_arguments
+
+`command name `: The command you want to give to the computer.
+
+`[OPTIONS] `: Known as flags or arguments to specify command how to act. These are often preceded by single(`-`) or double(`--`) dash and can be left out in case of certain commands.
+
+`additional_arguments `: additional information that tells the command to what to work on such as file or directory name. It may or may not be necessary depending on the command used.
+
 ## What is a Terminal?
 
 A terminal is text-based application used for viewing, manipulating and handling files on your computer. It can be considered as Windows' File Explorer or Mac's Finder without a graphical interface. It is also known as **CLI, command line, console, prompts**. 
@@ -28,17 +39,6 @@ A prompt has four parts.
 `currentuser `: The shell prompt normally ends in a **$** sign which means that the user is logged in as normal user with restricted access to resources, while **#** indicates that you are logged in as **root** also know as **super user** and can access nearly all resources which is other wise accessible to few programs. 
 
 **NOTE :** You should avoid logging in as root unless necessary as it makes your system vulnerable.
-
-## What is a command?
-A command is an instruction given to computer to do something, such as run a program or group of programs. These commands are given to computer by typing it in command-line or a terminal and then pressing ENTER key, which in turn will pass them to the shell. Most of the commands take the following form.
-
-> command [OPTIONS] additional_arguments
-
-`command name `: The command you want to give to the computer.
-
-`[OPTIONS] `: 
-
-`additional_arguments `: additional information such as file or directory name. Sometimes it is optional 
 
 ## 1. ls
 
@@ -97,7 +97,7 @@ username@localhost~$
 
 ```
 <p></p>
-1. First column shows the file's type and file mode bits. Type is shown as `-` for regular files, in above case type is `d` which means it is a directory. The file mode bits are read, write(to change), and execute(to run it as a program) for the file's owner, its group, and other users, respectively; a dash means the permission is not granted.
+1. First column shows the file's type and file mode bits. Type is shown as `-` for regular files, in above case type is `d` which means it is a directory. The file mode bits are **read** denoted by **r** indicating that user has just reading privileges, **write** denoted by **w** indicating user can make changes, and **execute** denoted by **x** indicating that user can run it as a program, for the file's owner, its group, and other users, respectively; a dash means the permission is not granted.
 2. The number of hard links to the file. 
 3. The user who owns the file. 
 4. The file's group. 
@@ -119,6 +119,11 @@ in your **Terminal**. The **man** command will output manual for the particular 
 
 > mkdir [OPTIONS] name_of_directory
 
+Let's create a directory on which we can experiment.
+
+Type in the following command in your **Terminal**. Use whatever name you want for your directory, I'm naming my directory basiccommands.
+
+
 <p class="terminal">Terminal</p>
 ```
 username@localhost~$ mkdir basiccommands
@@ -128,7 +133,8 @@ username@localhost~$
 
 ```
 
-<br>
+**NOTE :** Be careful while using space in naming you directory. Simply using space in name will create two directories one with name same as word before the space and the other with name same as word after the space. To have spaces in name use backslash `\` before space and just after the word  `$ mkdir my\ directory`.
+
 
 ## 3. cd
 
