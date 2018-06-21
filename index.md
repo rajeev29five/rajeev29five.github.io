@@ -53,8 +53,7 @@ Type the command
 <p class="terminal">Terminal</p> 
 ```
 username@localhost~$ ls
-Desktop	Downloads	Pictures	Templates
-Documents	Music		Public		Videos
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
 username@localhost~$ 
 
 ```
@@ -71,10 +70,11 @@ Type the ls command with `-a or --all` argument in **Terminal**.
 <p class="terminal">Terminal</p> 
 ```
 username@localhost~$ ls -a
-.		  .cache	Music		Videos
-..		  Desktop	Pictures
-.bash_history   Documents	Public
-.bashrc	  Downloads	Templates
+.               .cache          Music           Videos
+..              Desktop         Pictures
+.bash_history   Documents       Public
+.bashrc         Downloads       Templates
+~                                              
 username@localhost~$ 
 
 ```
