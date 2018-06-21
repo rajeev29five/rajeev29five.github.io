@@ -109,6 +109,8 @@ To learn more about **ls** or any command, type
 
 in your **Terminal**. The **man** command will output manual for the particular command to the standard output. 
 
+**Exercise :** Explore different arguments or flags with the help of **man** command that you can use with **ls** command.
+
 ## 2. mkdir
 
 **mkdir** stands for make directory. A directory is a folder. Command creates directory(ies), if they do not already exist.
