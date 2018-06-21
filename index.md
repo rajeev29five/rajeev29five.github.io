@@ -128,7 +128,35 @@ username@localhost~$
 
 <br>
 
-## 3. touch
+## 3. cd
+
+**cd** stands for change directory. Used to traverse directory(ies). If name of directory is not supplied, working directory is changed to root or home. If **`..`** is supplied, working directory is set to immediate previous of current working directory. If **`-`** is supplied old working directory is set to current working directory, if the directory change is successful, the absolute pathname of the new working directory is written to the standard  output.
+
+<p class="terminal">Terminal</p>
+```
+username@localhost~$
+
+
+
+
+```
+<br>
+
+## 4. pwd
+
+**pwd** prints absolute pathname of the current working directory. 
+
+<p class="terminal">Terminal</p>
+```
+username@localhost~$ pwd
+/home/username
+username@localhost~$
+
+
+```
+<br>
+
+## 5. touch
 
 An empty file that does not exist is created.
 
@@ -150,34 +178,6 @@ username@localhost~$
 Nothing happened? :(
 
 Well something did happen a file named **newfile.txt** has been created in the current working directory. To check whether the file has been created or not, list the contents of your current working directory. You know the command for that, don't you?
-<br>
-
-## 4. cd
-
-**cd** stands for change directory. Used to traverse directory(ies). If name of directory is not supplied, working directory is changed to root or home. If **`..`** is supplied, working directory is set to immediate previous of current working directory. If **`-`** is supplied old working directory is set to current working directory, if the directory change is successful, the absolute pathname of the new working directory is written to the standard  output.
-
-<p class="terminal">Terminal</p>
-```
-username@localhost~$
-
-
-
-
-```
-<br>
-
-## 5. pwd
-
-**pwd** prints absolute pathname of the current working directory. 
-
-<p class="terminal">Terminal</p>
-```
-username@localhost~$ pwd
-/home/username
-username@localhost~$
-
-
-```
 <br>
 
 ## 6. chmod
