@@ -22,7 +22,7 @@ This is what a prompt looks like on linux system.
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost~$
+username@localhost:~$
 
 
 ```
@@ -52,9 +52,9 @@ Type the command
 
 <p class="terminal">Terminal</p> 
 ```
-username@localhost~$ ls
+username@localhost:~$ ls
 Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
-username@localhost~$ 
+username@localhost:~$ 
 
 ```
 
@@ -69,12 +69,12 @@ Type the ls command with `-a or --all` argument in **Terminal**.
 
 <p class="terminal">Terminal</p> 
 ```
-username@localhost~$ ls -a
+username@localhost:~$ ls -a
 .               .cache          Music           Videos
 ..              Desktop         Pictures
 .bash_history   Documents       Public
 .bashrc         Downloads       Templates
-username@localhost~$ 
+username@localhost:~$ 
 
 ```
 
@@ -83,7 +83,7 @@ username@localhost~$
 Next type the ls command with `-l` argument in your **Terminal**.
 <p class="terminal">Terminal</p> 
 ```
-username@localhost~$ ls -l
+username@localhost:~$ ls -l
 drwxr-xr-x 2 username username 4096 Apr  8 16:45 Desktop
 drwxr-xr-x 2 username username 4096 Jun 10 00:08 Documents
 drwxr-xr-x 2 username username 4096 Jun 21 09:18 Downloads
@@ -92,7 +92,7 @@ drwxr-xr-x 2 username username 4096 Jun 13 04:56 Pictures
 drwxr-xr-x 2 username username 4096 Jul 24  2017 Public
 drwxr-xr-x 2 username username 4096 Jul 24  2017 Templates
 drwxr-xr-x 2 username username 4096 Jun 17 22:21 Videos
-username@localhost~$ 
+username@localhost:~$ 
 
 ```
 <p></p>
@@ -125,8 +125,8 @@ Type in the following command in your **Terminal**. Use whatever name you want f
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost~$ mkdir basiccommands
-username@localhost~$ 
+username@localhost:~$ mkdir basiccommands
+username@localhost:~$ 
 
 
 
@@ -134,15 +134,19 @@ username@localhost~$
 
 **NOTE :** Be careful while using space(s) in naming you directory. Simply using space(s) in name will create multiple directories. To have spaces in name use backslash `\` before space and just after the word  `$ mkdir my\ directory`.
 
+You can use **ls** command to check if your directory has been created or not.
+
 
 ## 3. cd
 
 **cd** stands for change directory. Used to traverse directory(ies). If name of directory is not supplied, working directory is changed to root or home. If **`..`** is supplied, working directory is set to immediate previous of current working directory. If **`-`** is supplied old working directory is set to current working directory, if the directory change is successful, the absolute pathname of the new working directory is written to the standard  output.
 
+For now let's change our working directory to the directory you created with the help of **mkdir** command.
+
 <p class="terminal">Terminal</p>
 ```
-username@localhost~$
-
+username@localhost:~$ cd basiccommands
+username@localhost:~/basiccommands$
 
 
 
@@ -155,9 +159,9 @@ username@localhost~$
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost~$ pwd
+username@localhost:~$ pwd
 /home/username
-username@localhost~$
+username@localhost:~$
 
 
 ```
@@ -175,8 +179,8 @@ Type the following command in your teminal and the press ENTER.
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost~$ touch newfile.txt
-username@localhost~$
+username@localhost:~$ touch newfile.txt
+username@localhost:~$
 
 
 
@@ -192,7 +196,7 @@ Well something did happen a file named **newfile.txt** has been created in the c
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost~$
+username@localhost:~$
 
 
 
@@ -206,7 +210,7 @@ Prints the first 10 lines of each file to standard output. In case more than one
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost~$ head newfile.txt
+username@localhost:~$ head newfile.txt
 I'm first line.
 I'm second line.
 I'm third line.
@@ -214,7 +218,7 @@ I'm third line.
 .
 .
 I'm last line.
-username@localhost~$ 
+username@localhost:~$ 
 ```
 
 
@@ -226,7 +230,7 @@ username@localhost~$
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost~$ tail newfile.txt
+username@localhost:~$ tail newfile.txt
 
 
 
