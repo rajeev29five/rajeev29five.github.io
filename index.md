@@ -74,7 +74,6 @@ username@localhost~$ ls -a
 ..              Desktop         Pictures
 .bash_history   Documents       Public
 .bashrc         Downloads       Templates
-~                                              
 username@localhost~$ 
 
 ```
@@ -133,7 +132,7 @@ username@localhost~$
 
 ```
 
-**NOTE :** Be careful while using space in naming you directory. Simply using space in name will create two directories one with name same as word before the space and the other with name same as word after the space. To have spaces in name use backslash `\` before space and just after the word  `$ mkdir my\ directory`.
+**NOTE :** Be careful while using space(s) in naming you directory. Simply using space(s) in name will create multiple directories. To have spaces in name use backslash `\` before space and just after the word  `$ mkdir my\ directory`.
 
 
 ## 3. cd
