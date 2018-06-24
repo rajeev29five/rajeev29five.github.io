@@ -12,7 +12,7 @@ A command is an instruction given to computer to do something, such as run a pro
 
 `[OPTIONS] `: Known as flags or arguments to specify command how to act. These are often preceded by single(`-`) or double(`--`) dash and can be left out in case of certain commands.
 
-`additional_arguments `: additional information that tells the command to what to work on such as file or directory name. It may or may not be necessary depending on the command used.
+`arguments `: additional information that tells the command to what to work on such as file or directory name. It may or may not be necessary depending on the command used.
 
 ## What is a Terminal?
 
@@ -139,7 +139,13 @@ You can use **ls** command to check if your directory has been created or not.
 
 ## 3. cd
 
-**cd** stands for change directory. Used to traverse directory(ies). If name of directory is not supplied, working directory is changed to root or home. If **`..`** is supplied, working directory is set to immediate previous of current working directory. If **`-`** is supplied old working directory is set to current working directory, if the directory change is successful, the absolute pathname of the new working directory is written to the standard  output.
+**cd** stands for change directory. Used to traverse directory(ies). 
+
+Command takes the following form, 
+
+> cd [OPTIONS] [dir]
+
+If name of directory(in above case "dir") is not supplied, working directory is changed to root or home. If **`..`** is supplied, working directory is set to the directory immediate previous of current working directory. If **`-`** is supplied old working directory is set to current working directory, if the directory change is successful, the absolute pathname of the new working directory is written to the standard  output.
 
 For now let's change our working directory to the directory you created with the help of **mkdir** command.
 
@@ -153,14 +159,15 @@ username@localhost:~/basiccommands$
 ```
 <br>
 
+
 ## 4. pwd
 
 **pwd** prints absolute pathname of the current working directory. 
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost:~$ pwd
-/home/username
+username@localhost:~/basiccommands$ pwd
+/home/username/basiccommands
 username@localhost:~$
 
 
