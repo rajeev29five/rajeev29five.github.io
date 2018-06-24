@@ -96,12 +96,7 @@ username@localhost:~$
 
 ```
 <p></p>
-1. First column shows the file's type and file mode bits. Type is shown as `-` for regular files, in above case type is `d` which means it is a directory. The file mode bits are **read** denoted by **r** indicating that user has just reading privileges, **write** denoted by **w** indicating user can make changes, and **execute** denoted by **x** indicating that user can run it as a program, for the file's owner, its group, and other users, respectively; a dash means the permission is not granted.
-2. The number of hard links to the file. 
-3. The user who owns the file. 
-4. The file's group. 
-5. The file's size in bytes. 
-6. The date the file was last modified. 
+1. First column shows the file's type and file mode bits. Type is shown as `-` for regular files, in above case type is `d` which means it is a directory. We'll discuss about file mode bits later while learning about **chmod** command.
 
 To learn more about **ls** or any command, type 
 > **man command_name** 
@@ -200,6 +195,14 @@ Well something did happen a file named **newfile.txt** has been created in the c
 
 ## 6. chmod
 
+**chmod** stands for change mode. Changes the file or directory(ies) mode bits(access permissions) of each given file according to _mode_, which can either be an octal number(digits 0 through 7) representing the bit pattern for new mode bits or a symbolic representations.
+
+The file mode bits are **read** denoted by **r** indicating that user has just reading privileges, **write** denoted by **w** indicating user can make changes, and **execute** denoted by **x** indicating that user can run it as a program, for the file's owner, its group, and other users, respectively; a dash means the permission is not granted.
+2. The number of hard links to the file. 
+3. The user who owns the file. 
+4. The file's group. 
+5. The file's size in bytes. 
+6. The date the file was last modified. 
 
 <p class="terminal">Terminal</p>
 ```
@@ -226,6 +229,7 @@ I'm third line.
 .
 I'm tenth line.
 username@localhost:~/basiccommands$ 
+
 ```
 <br>
 To print first **n** number of line(s) of a file. In the following example I'm printing first **3** lines of **newfile.txt**. 
@@ -236,7 +240,11 @@ username@localhost:~/basiccommands$ head -n 3 newfile.txt
 I'm first line.
 I'm second line.
 I'm third line.
-username@localhost:~/basiccommands$ 
+username@localhost:~/basiccommands$
+
+
+
+
 ```
 <br>
 **NOTE :** As an exercise use `-n or --lines` with multiple files.
@@ -256,5 +264,10 @@ I'm twelveth line.
 .
 I'm last line.
 username@localhost:~/basiccommands$
+
 ```
+<br>
+
+Explore different [OPTIONS] that can be used with **tail** command(use `man tail` to see available [OPTIONS]).  
+
 <br>
