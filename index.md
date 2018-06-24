@@ -228,6 +228,28 @@ username@localhost:~/basiccommands$
 ```
 
 `ls -l` again to see the difference between old and new access permissions. In symbolic notation `u` stands for **user**, `g` stands for **group** and `o` stands for **other**.
+
+Now using the octal permissions. The current access permission of **newfile.txt** is **rwx** for **user**, **rw** for **group** and **r** for **other**. Let's change the permission for **user** from **r** to **rx** using octal notation and leave **user** and **group** as it is.
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ chmod 765 newfile.txt
+username@localhost:~/basiccommands$
+
+
+
+```
+
+Type `ls -l` and you will notice that now the permission for **newfile.txt** looks something like this `-rwxrw-r-x`.
+
+The octal notation **7, 6 and 5** individually represent **user**, **group** and **other** respectively. In fact these numbers are combination of digit `4` that represents **read**, `2` that represents **write**, `1` that represents **execute** and `0` that represents **no permission**. Therefore in case of above example
+
+**7** = **4(read)** + **2(write)** + **1(execute)**
+
+**6** = **4(read)** + **2(write)** + **0(no permission)**
+
+**5** = **4(read)** + **0(no permission)** + **1(execute)**
+
 <br>
 
 ## 7. head
