@@ -213,7 +213,7 @@ username@localhost:~/basiccommands$
 
 ## 7. head
 
-Prints the first 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied, then **`n`** number of lines are printed to standard output. Let us see the content of the file that we created using touch command.
+Prints the first 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied **`n`** number of lines are printed to standard output. Let us see the content of the file that we created using touch command.
 
 <p class="terminal">Terminal</p>
 ```
@@ -224,11 +224,22 @@ I'm third line.
 .
 .
 .
-I'm last line.
+I'm tenth line.
 username@localhost:~/basiccommands$ 
 ```
+<br>
+To print first **n** number of line(s) of a file. In the following example I'm printing first **3** lines of **newfile.txt**. 
 
-
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ head -n 3 newfile.txt
+I'm first line.
+I'm second line.
+I'm third line.
+username@localhost:~/basiccommands$ 
+```
+<br>
+**NOTE :** As an exercise use `-n or --lines` with multiple files.
 <br>
 
 ## 8. tail
@@ -238,9 +249,12 @@ username@localhost:~/basiccommands$
 <p class="terminal">Terminal</p>
 ```
 username@localhost:~/basiccommands$ tail newfile.txt
-
-
-
-
+I'm eleventh line.
+I'm twelveth line.
+.
+.
+.
+I'm last line.
+username@localhost:~/basiccommands$
 ```
 <br>
