@@ -216,7 +216,17 @@ The file mode bits are **read** denoted by **r** indicating that user has just r
 5. The file's size in bytes. 
 6. The date the file was last modified. 
 
-Let's change the mode bit using symbolic notation. Type the command in your **Terminal** as shown below.
+Let's change the mode bit using symbolic notation. Symbolic notation takes the following form
+
+> chmod [reference][operator][modes] filename
+
+`reference : ` There are four references **u(user/owner), g(group), o(other)** and **a(all u, g and o)**.
+
+`operator : ` There are three operators **+(add mode bit to specified reference), -(remove mode bit from specified reference)** and **=(modes specified should be made exact modes for specified reference)**. 
+
+`mode : ` There six modes **r(read), w(write), x(execute), X(special execute), s(setuid/gid)** and **t(sticky)**.
+
+Type the command in your **Terminal** as shown below.
 
 <p class="terminal">Terminal</p>
 ```
@@ -227,9 +237,9 @@ username@localhost:~/basiccommands$
 
 ```
 
-`ls -l` again to see the difference between old and new access permissions. In symbolic notation `u` stands for **user**, `g` stands for **group** and `o` stands for **other**.
+`ls -l` again to see the difference between old and new access permissions.
 
-Now using the octal permissions. The current access permission of **newfile.txt** is **rwx** for **user**, **rw** for **group** and **r** for **other**. Let's change the permission for **user** from **r** to **rx** using octal notation and leave **user** and **group** as it is.
+Now using the octal permissions. The current access permission of **newfile.txt** is **rwx** for **user/owner**, **rw** for **group** and **r** for **other**. Let's change the permission for **user** from **r** to **rx** using octal notation and leave **user/owner** and **group** as it is.
 
 <p class="terminal">Terminal</p>
 ```
@@ -242,7 +252,7 @@ username@localhost:~/basiccommands$
 
 Type `ls -l` and you will notice that now the permission for **newfile.txt** looks something like this `-rwxrw-r-x`.
 
-The octal notation **7, 6 and 5** individually represent **user**, **group** and **other** respectively. In fact these numbers are combination of digit `4` that represents **read**, `2` that represents **write**, `1` that represents **execute** and `0` that represents **no permission**. Therefore in case of above example
+The octal notation **7, 6 and 5** individually represent **user/owner**, **group** and **other** respectively. In fact these numbers are combination of digit `4` that represents **read**, `2` that represents **write**, `1` that represents **execute** and `0` that represents **no permission**. Therefore in case of above example
 
 **7** = **4(read)** + **2(write)** + **1(execute)**
 
