@@ -216,14 +216,18 @@ The file mode bits are **read** denoted by **r** indicating that user has just r
 5. The file's size in bytes. 
 6. The date the file was last modified. 
 
+Let's change the mode bit using symbolic notation. Type the command in your **Terminal** as shown below.
+
 <p class="terminal">Terminal</p>
 ```
-username@localhost:~/basiccommands$
+username@localhost:~/basiccommands$ chmod u=rwx,g=rw,o=r newfile.txt
 username@localhost:~/basiccommands$
 
 
 
 ```
+
+`ls -l` again to see the difference between old and new access permissions. In symbolic notation `u` stands for **user**, `g` stands for **group** and `o` stands for **other**.
 <br>
 
 ## 7. head
