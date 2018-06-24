@@ -6,7 +6,7 @@ layout: default
 ## What is a command?
 A command is an instruction given to computer to do something, such as run a program or group of programs. These commands are given to computer by typing it in command-line or a terminal and then pressing ENTER key, which in turn will pass them to the shell. Most of the commands take the following form.
 
-> command [OPTIONS] additional_arguments
+> command [OPTIONS] arguments
 
 `command name `: The command you want to give to the computer.
 
@@ -168,7 +168,7 @@ username@localhost:~/basiccommands$
 ```
 username@localhost:~/basiccommands$ pwd
 /home/username/basiccommands
-username@localhost:~$
+username@localhost:~/basiccommands$
 
 
 ```
@@ -186,8 +186,8 @@ Type the following command in your teminal and the press ENTER.
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost:~$ touch newfile.txt
-username@localhost:~$
+username@localhost:~/basiccommands$ touch newfile.txt
+username@localhost:~/basiccommands$
 
 
 
@@ -203,8 +203,8 @@ Well something did happen a file named **newfile.txt** has been created in the c
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost:~$
-
+username@localhost:~/basiccommands$
+username@localhost:~/basiccommands$
 
 
 
@@ -217,7 +217,7 @@ Prints the first 10 lines of each file to standard output. In case more than one
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost:~$ head newfile.txt
+username@localhost:~/basiccommands$ head newfile.txt
 I'm first line.
 I'm second line.
 I'm third line.
@@ -225,7 +225,7 @@ I'm third line.
 .
 .
 I'm last line.
-username@localhost:~$ 
+username@localhost:~/basiccommands$ 
 ```
 
 
@@ -237,7 +237,7 @@ username@localhost:~$
 
 <p class="terminal">Terminal</p>
 ```
-username@localhost:~$ tail newfile.txt
+username@localhost:~/basiccommands$ tail newfile.txt
 
 
 
