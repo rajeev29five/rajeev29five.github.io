@@ -197,6 +197,16 @@ Well something did happen a file named **newfile.txt** has been created in the c
 
 **chmod** stands for change mode. Changes the file or directory(ies) mode bits(access permissions) of each given file according to _mode_, which can either be an octal number(digits 0 through 7) representing the bit pattern for new mode bits or a symbolic representations.
 
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ ls -l
+-rw-rw-r--. 1 rajeev rajeev 51 Jun 24 20:00 newfile.txt
+username@localhost:~/basiccommands$
+
+
+
+```
+
 The file mode bits are **read** denoted by **r** indicating that user has just reading privileges, **write** denoted by **w** indicating user can make changes, and **execute** denoted by **x** indicating that user can run it as a program, for the file's owner, its group, and other users, respectively; a dash means the permission is not granted.
 2. The number of hard links to the file. 
 3. The user who owns the file. 
