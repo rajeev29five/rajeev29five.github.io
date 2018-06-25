@@ -171,7 +171,7 @@ username@localhost:~/basiccommands$
 
 ## 5. touch
 
-An empty file that does not exist is created.
+An empty file that does not already exists in the current working directory is created.
 
 **touch** takes the following form.
 
@@ -259,6 +259,8 @@ The octal notation **7, 6 and 5** individually represent **user/owner**, **group
 **6** = **4(read)** + **2(write)** + **0(no permission)**
 
 **5** = **4(read)** + **0(no permission)** + **1(execute)**
+
+Try different octal number combinations and find out  
 
 <br>
 
