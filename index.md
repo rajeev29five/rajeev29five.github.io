@@ -260,7 +260,7 @@ The octal notation **7, 6 and 5** individually represent **user/owner**, **group
 
 **5** = **4(read)** + **0(no permission)** + **1(execute)**
 
-Try different octal number combinations and find out  
+Try different octal notation to change file access permissions.  
 
 <br>
 
