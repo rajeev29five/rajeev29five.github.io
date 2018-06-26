@@ -40,6 +40,8 @@ A prompt has four parts.
 
 **NOTE :** You should avoid logging in as root unless necessary as it makes your system vulnerable.
 
+<br>
+
 ## 1. ls
 
 **ls** stands for list. It lists the contents of directory(file(s) and subdirectory(ies)) with additional information. 
@@ -132,7 +134,7 @@ The below example lists the contents of **ChildFolder** that is 3 levels deep in
 
 <p class="terminal">Terminal</p> 
 ```
-username@localhost:~$ ls GreatGrandParentFolder/GrandParentFolder/ParentFolder/ChildFolder/
+username@localhost:~$ ls GreatGrandParentFolder/GrandParentFolder/ParentFolder/ChildFolder/         
 child.txt
 username@localhost:~$ 
 
@@ -145,6 +147,8 @@ To learn more about **ls** or any command, type
 in your **Terminal**. The **man** command will output manual for the particular command to the standard output. 
 
 **Exercise :** Explore different arguments or flags with the help of **man** command that you can use with **ls** command.
+
+<br>
 
 ## 2. mkdir
 
@@ -172,6 +176,20 @@ username@localhost:~$
 
 You can use **ls** command to check if your directory has been created or not.
 
+To create directory within another directory, provide the absolute path as an argument to **mkdir**. Let's create another directory within **basiccommands** directory name **GreatGrandParentFolder**. 
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~$ mkdir basiccommands/GreatGrandParentFolder
+username@localhost:~$ 
+
+
+
+```
+
+Similarly create directory within **GreatGrandParentFolder** named **GrandParentFolder**... till **GreatGrandChildFolder**. We will use this deep directory structure with our next command that is **cd**.
+
+<br>
 
 ## 3. cd
 
@@ -207,6 +225,8 @@ username@localhost:~$
 ```
 
 In above example current directory is **basiccommands** and its immediate previous is the **root or home** directory(denoted by **`~`**). 
+
+<br>
 
 ## 4. pwd
 
@@ -244,6 +264,7 @@ username@localhost:~/basiccommands$
 Nothing happened? :(
 
 Well something did happen a file named **newfile.txt** has been created in the current working directory. To check whether the file has been created or not, list the contents of your current working directory. You know the command for that, don't you?
+
 <br>
 
 ## 6. chmod
