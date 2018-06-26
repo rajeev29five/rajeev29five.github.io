@@ -97,6 +97,11 @@ username@localhost:~$
 ```
 <p></p>
 1. First column shows the file's type and file mode bits. Type is shown as `-` for regular files, in above case type is `d` which means it is a directory. We'll discuss about file mode bits later while learning about **chmod** command.
+2. The number of hard links to the file. 
+3. The user who owns the file. 
+4. The file's group. 
+5. The file's size in bytes. 
+6. The date the file was last modified.
 
 To learn more about **ls** or any command, type 
 > **man command_name** 
@@ -154,6 +159,18 @@ username@localhost:~/basiccommands$
 ```
 <br>
 
+As mentioned before **`..`** with **cd** changes the working directory to immediate previous of the current working directory.
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ cd ..
+username@localhost:~$
+
+
+
+```
+
+In above example current directory is **basiccommands** and its immediate previous is the **root or home** directory(denoted by **`~`**). 
 
 ## 4. pwd
 
@@ -209,12 +226,7 @@ username@localhost:~/basiccommands$
 
 ```
 
-The file mode bits are **read** denoted by **r** indicating that user has just reading privileges, **write** denoted by **w** indicating user can make changes, and **execute** denoted by **x** indicating that user can run it as a program, for the file's owner, its group, and other users, respectively; a dash means the permission is not granted.
-2. The number of hard links to the file. 
-3. The user who owns the file. 
-4. The file's group. 
-5. The file's size in bytes. 
-6. The date the file was last modified. 
+The file mode bits are **read** denoted by **r** indicating that user has just reading privileges, **write** denoted by **w** indicating user can make changes, and **execute** denoted by **x** indicating that user can run it as a program, for the file's owner, its group, and other users, respectively; a dash means the permission is not granted. 
 
 Let's change the mode bit using symbolic notation. Symbolic notation takes the following form
 
