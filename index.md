@@ -260,7 +260,19 @@ The octal notation **7, 6 and 5** individually represent **user/owner**, **group
 
 **5** = **4(read)** + **0(no permission)** + **1(execute)**
 
-Try different octal notation to change file access permissions.  
+To change mode bits of a directory use `-R` arguement with chmod as shown below. Using `-R` with **chmod** will recursively change the mode bits of all the files inside that directory to specified modes.
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ chmod 777 -R directory
+username@localhost:~/basiccommands$
+
+
+
+```
+<br>
+
+Try different octal notation to change file access permissions.
 
 <br>
 
