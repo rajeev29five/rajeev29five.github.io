@@ -103,7 +103,7 @@ username@localhost:~$
 5. The file's size in bytes. 
 6. The date the file was last modified.
 
-Using name of directory as an arguement to **ls** command will list the contents of directory.
+Using name of directory as an argument to **ls** command will list the contents of directory.
 
 <p class="terminal">Terminal</p> 
 ```
@@ -123,6 +123,20 @@ For instance after typing
 > username@localhost:~$ **ls Dow** 
 
 hit **tab** key once to autocomplete your command.
+
+To list the contents of directory that is located deep within a directory, provide absolute pathname of the directory whose content you want to as an argument to **ls** command.
+
+The below example lists the contents of **ChildFolder** that is 3 levels deep inside the **GreatParentFolder**.
+
+**Remiders** do not type the whole name yourself hit **tab** as much as you can. 
+
+<p class="terminal">Terminal</p> 
+```
+username@localhost:~$ ls GreatGrandParentFolder/GrandParentFolder/ParentFolder/ChildFolder/
+child.txt
+username@localhost:~$ 
+
+```
 
 To learn more about **ls** or any command, type
 
@@ -294,7 +308,7 @@ The octal notation **7, 6 and 5** individually represent **user/owner**, **group
 
 **5** = **4(read)** + **0(no permission)** + **1(execute)**
 
-To change mode bits of a directory use `-R` arguement with chmod as shown below. Using `-R` with **chmod** will recursively change the mode bits of all the files inside that directory to specified modes.
+To change mode bits of a directory use `-R` argument with chmod as shown below. Using `-R` with **chmod** will recursively change the mode bits of all the files inside that directory to specified modes.
 
 <p class="terminal">Terminal</p>
 ```
