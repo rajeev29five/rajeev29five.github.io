@@ -103,7 +103,29 @@ username@localhost:~$
 5. The file's size in bytes. 
 6. The date the file was last modified.
 
-To learn more about **ls** or any command, type 
+Using name of directory as an arguement to **ls** command will list the contents of directory.
+
+<p class="terminal">Terminal</p> 
+```
+username@localhost:~$ ls Downloads/
+bootstrap-4.0.0-dist 	
+bootstrap-4.0.0-dist.zip
+opencv-python-tutroals
+Westworld The Passenger
+username@localhost:~$ 
+
+```
+
+A simple trick, instead of typing the whole thing in **Terminal** yourself press **tab key** after typing some part of the command.
+
+For instance after typing 
+
+> username@localhost:~$ **ls Dow** 
+
+hit **tab** key once to autocomplete your command.
+
+To learn more about **ls** or any command, type
+
 > **man command_name** 
 
 in your **Terminal**. The **man** command will output manual for the particular command to the standard output. 
