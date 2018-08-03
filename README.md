@@ -1,6 +1,6 @@
 ### This repository contains source of https://rajeev29five.github.io published with the help of [Github Page](https://pages.github.com/) 
 
-## Contribution Guide
+## Build
 
 > Open Terminal.
 
@@ -25,3 +25,7 @@ Run the Github Page on localhost.
 > $ bundle exec jekyll serve
 
 The page will be running on http://127.0.0.1:4000/ by default.
+
+## Contribution
+
+If you find this GitHub page cool and would like to make it cooler, feel free to make pull requests or post any suggestions.
