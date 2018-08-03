@@ -1,0 +1,15 @@
+.p4 {
+	padding: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+}
+
+@media (min-width: 1200px) {
+  /* change this, by default 1140px */
+  .container {
+    max-width: 940px;
+  }
+}
