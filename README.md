@@ -28,4 +28,4 @@ The page will be running on http://127.0.0.1:4000/ by default.
 
 ## Contribution
 
-If you find this GitHub page cool and would like to make it cooler, feel free to make pull requests or post any suggestions.
+If you find this GitHub page cool and would like to make it even cooler, feel free to make pull requests or post any suggestions.
