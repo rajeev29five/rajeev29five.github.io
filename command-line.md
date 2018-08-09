@@ -402,3 +402,43 @@ username@localhost:~/basiccommands$
 Explore different [OPTIONS] that can be used with **tail** command(use `man tail` to see available [OPTIONS]).  
 
 <br>
+
+## 8. cat
+
+**cat** stands for concatnate. It concatenates file(s) to standard output.
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ cat newfile.txt
+I'm first line.
+I'm second line.
+.
+.
+.
+I'm last line.
+username@localhost:~/basiccommands$
+
+```
+<br>
+
+Use `-n or --number` to number the output lines.
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ cat newfile.txt
+1  I'm first line.
+2  I'm second line.
+3  I'm third line.
+.   . 
+.   . 
+.   .
+.   .
+10 I'm last line.
+username@localhost:~/basiccommands$
+
+```
+<br>
+
+If you want to learn more about **cat** command, enter `man cat` in your terminal.  
+
+<br>
