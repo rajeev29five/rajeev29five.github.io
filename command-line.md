@@ -230,7 +230,7 @@ In above example current directory is **basiccommands** and its immediate previo
 
 ## 4. pwd
 
-**pwd** prints absolute pathname of the current working directory. 
+**pwd** stands for "print working directory", it prints absolute pathname of the current working directory. 
 
 <p class="terminal">Terminal</p>
 ```
@@ -349,6 +349,8 @@ Try different octal notation to change file access permissions.
 
 Prints the first 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied **`n`** number of lines are printed to standard output. Let us see the content of the file that we created using touch command.
 
+> head [OPTIONS] FILE(s)
+
 <p class="terminal">Terminal</p>
 ```
 username@localhost:~/basiccommands$ head newfile.txt
@@ -385,6 +387,8 @@ username@localhost:~/basiccommands$
 
 **tail** prints the last 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied, then **n** number of lines are printed to standard output.
 
+> tail [OPTIONS] FILE(s)
+
 <p class="terminal">Terminal</p>
 ```
 username@localhost:~/basiccommands$ tail newfile.txt
@@ -403,9 +407,12 @@ Explore different [OPTIONS] that can be used with **tail** command(use `man tail
 
 <br>
 
-## 8. cat
+## 9. cat
 
 **cat** stands for concatnate. It concatenates file(s) to standard output.
+
+> cat [OPTIONS] FILE(s)
+
 
 <p class="terminal">Terminal</p>
 ```
@@ -433,7 +440,7 @@ username@localhost:~/basiccommands$ cat newfile.txt
 .   . 
 .   .
 .   .
-10 I'm last line.
+10 I'm last **line**.
 username@localhost:~/basiccommands$
 
 ```
@@ -442,3 +449,4 @@ username@localhost:~/basiccommands$
 If you want to learn more about **cat** command, enter `man cat` in your terminal.  
 
 <br>
+
