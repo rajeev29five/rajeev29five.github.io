@@ -141,6 +141,47 @@ img {
 	left: 69px;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+
+	
+
+	.list #project1:after {
+		position: absolute;
+		content: '';
+		width: 15px;
+		height: 15px;
+		border: 2px solid #40424a;
+		border-radius: 50px;
+		background: #cacaca;
+		top: 198px;
+		left: 69px;
+	}
+
+	.list #project2:after {
+		position: absolute;
+		content: '';
+		width: 15px;
+		height: 15px;
+		border: 2px solid #40424a;
+		border-radius: 50px;
+		background: #cacaca;
+		top: 462px;
+		left: 69px;
+	}	
+
+	.list #project3:after {
+		position: absolute;
+		content: '';
+		width: 15px;
+		height: 15px;
+		border: 2px solid #40424a;
+		border-radius: 50px;
+		background: #cacaca;
+		top: 725px;
+		left: 69px;
+	}
+}
+
 /* Tablet :768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
