@@ -461,5 +461,29 @@ If you want to learn more about **cat** command, enter `man cat` in your termina
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" newfile.txt
 I'm <span class="colbol">second</span> line.
 username@localhost:~/basiccommands$
+<br>
 </code></pre></div></div>
+<br>
 
+`-n` or `--line-number` prefixes each line of output with 1-based numbering.
+
+<br>
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" newfile.txt
+<strong>2: </strong>I'm <span class="colbol">second</span> line.
+username@localhost:~/basiccommands$
+<br>
+</code></pre></div></div>
+<br>
+
+`-i` or `--ignore-case` matches pattern in the file irrespective of case distinctions(upper or lower case). Change any letter that you want search to uppercase in **newfile.txt**. For example I am changing **second** to **SECOND** in newfile.txt. 
+<br>
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" -i newfile.txt
+I'm <span class="colbol">SECOND</span> line.
+username@localhost:~/basiccommands$
+<br>
+</code></pre></div></div>
+<br>
+
+	
