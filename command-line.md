@@ -440,7 +440,7 @@ username@localhost:~/basiccommands$ cat newfile.txt
 .   . 
 .   .
 .   .
-10 I'm last **line**.
+10 I'm last line.
 username@localhost:~/basiccommands$
 
 ```
