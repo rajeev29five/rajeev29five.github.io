@@ -459,7 +459,7 @@ If you want to learn more about **cat** command, enter `man cat` in your termina
 
 <p class="terminal">Terminal</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" newfile.txt
-I'm <strong>second</strong> line.
+I'm <span class="colbol">second</span> line.
 username@localhost:~/basiccommands$
 </code></pre></div></div>
 
