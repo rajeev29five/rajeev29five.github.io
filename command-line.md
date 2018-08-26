@@ -450,3 +450,18 @@ If you want to learn more about **cat** command, enter `man cat` in your termina
 
 <br>
 
+## 10. grep
+
+**grep** stands for global regular expression print. It searches for PATTERN in each file and prints the matching line.
+
+> grep pattern FILE(s)
+
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ grep "second" newfile.txt
+I'm second line.
+username@localhost:~/basiccommands$
+
+```
+<br>
