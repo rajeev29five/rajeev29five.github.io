@@ -276,6 +276,13 @@ Full-Width Styles
   border-radius: 5px 5px 0px 0px;
 }
 
+
+.footer {
+  flex-shrink: 0;
+  background-color: #343a40;
+    /*position: relative;*/
+}
+
 .colbol{
   font-weight:bold;
   color: #931c3d;  
