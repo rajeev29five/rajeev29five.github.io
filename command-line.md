@@ -485,3 +485,27 @@ username@localhost:~/basiccommands$
 <br>
 </code></pre></div></div>
 <br>
+
+## 11. rm
+
+**rm** stands for remove. It removes files or directories.
+
+> rm [OPTIONS] FILE(s)
+
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ rm file.txt
+username@localhost:~/basiccommands$
+<br>
+</code></pre></div></div>
+<br>
+
+`-r` or `--recursive` removes directories and their contents recursively.
+
+<br>
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ rm -r directory/
+username@localhost:~/basiccommands$
+<br>
+</code></pre></div></div>
+<br>
