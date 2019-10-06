@@ -531,3 +531,62 @@ To move a file or a directory to an other directory you have to do like that :
     </code></pre>
 </div>
 <br>
+
+## 13. history
+
+**history** shows a list of the command entered since the session began.
+
+> history OPTIONS
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ history<br>   1  ls<br>   2  cd<br>   3  pwd
+    </code></pre>
+</div>
+<br>
+
+`history #` displays the latest # commands from history
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ history 2<br>   1  ls<br>   2  cd
+    </code></pre>
+</div>
+<br>
+
+`!#` repeats the #th command from history
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ !3<br>pwd<br>/home/username/basiccommands
+    </code></pre>
+</div>
+<br>
+
+`!!` repeats the most recent command from history
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ !!<br>pwd<br>/home/username/basiccommands
+    </code></pre>
+</div>
+<br>
+
+
+`history -d #` deletes the numbered line from history
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ history -d 3<br>username@localhost:~/basiccommands$
+    </code></pre>
+</div>
+<br>
+
+`history -c` deletes the numbered line from history
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ history -c<br>username@localhost:~/basiccommands$ 
+    </code></pre>
+</div>
+<br>
