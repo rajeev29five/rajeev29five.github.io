@@ -509,3 +509,25 @@ username@localhost:~/basiccommands$
 <br>
 </code></pre></div></div>
 <br>
+
+## 12. mv
+
+**mv** stands for move. It moves or renames files or directories.
+
+> mv FILE DESTINATION
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ mv oldname.txt newname.txt<br>username@localhost:~/basiccommands$ mv oldname_dir newname_dir<br>username@localhost:~/basiccommands$
+    </code></pre>
+</div>
+<br>
+
+To move a file or a directory to an other directory you have to do like that :
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ mv newname.txt newname_dir/<br>username@localhost:~/basiccommands$
+    </code></pre>
+</div>
+<br>
