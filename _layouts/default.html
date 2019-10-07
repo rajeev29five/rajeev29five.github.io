@@ -20,6 +20,7 @@
 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <!-- <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
+          <a href="/">Go back to the home page</a>
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -36,6 +37,8 @@
         {{ content }}
       </section>
     </div>
+
+    <a href="#" class="go-top"><img src="assets/images/icon_download.png" alt="go top"></a>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">

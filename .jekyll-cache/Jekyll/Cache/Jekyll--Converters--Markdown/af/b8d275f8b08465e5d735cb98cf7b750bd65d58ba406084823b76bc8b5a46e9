@@ -1,4 +1,4 @@
-I"ê`<hr />
+I"„j<hr />
 
 <h2 id="what-is-a-command">What is a command?</h2>
 <p>A command is an instruction given to computer to do something, such as run a program or group of programs. These commands are given to computer by typing it in command-line or a terminal and then pressing ENTER key, which in turn will pass them to the shell. Most of the commands take the following form.</p>
@@ -453,36 +453,28 @@ username@localhost:~/basiccommands$
 <p><strong>grep</strong> stands for global regular expression print. It searches for PATTERN in each file and prints the matching line.</p>
 
 <blockquote>
-  <p>grep pattern FILE(s)</p>
+  <p>grep [OPTIONS] PATTERN FILE(s)</p>
 </blockquote>
 
 <p class="terminal">Terminal</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" newfile.txt
+<div class="highlighter-rouge"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" newfile.txt
 I'm <span class="colbol">second</span> line.
-username@localhost:~/basiccommands$
-<br />
-</code></pre></div></div>
+username@localhost:~/basiccommands$<br />
+</code></pre></div>
 <p><br /></p>
 
 <p><code class="highlighter-rouge">-n</code> or <code class="highlighter-rouge">--line-number</code> prefixes each line of output with 1-based numbering.</p>
-
-<p><br /></p>
 <p class="terminal">Terminal</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" newfile.txt
+<div class="highlighter-rouge"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep -n "second" newfile.txt
 <strong>2: </strong>I'm <span class="colbol">second</span> line.
-username@localhost:~/basiccommands$
-<br />
-</code></pre></div></div>
+username@localhost:~/basiccommands$<br />
+</code></pre></div>
 <p><br /></p>
 
-<p><code class="highlighter-rouge">-i</code> or <code class="highlighter-rouge">--ignore-case</code> matches pattern in the file irrespective of case distinctions(upper or lower case). Change any letter that you want search to uppercase in <strong>newfile.txt</strong>. For example I am changing <strong>second</strong> to <strong>SECOND</strong> in newfile.txt. 
-<br /></p>
+<p><code class="highlighter-rouge">-i</code> or <code class="highlighter-rouge">--ignore-case</code> matches pattern in the file irrespective of case distinctions(upper or lower case). Change any letter that you want search to uppercase in <strong>newfile.txt</strong>. For example I am changing <strong>second</strong> to <strong>SECOND</strong> in newfile.txt.</p>
 <p class="terminal">Terminal</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" -i newfile.txt
-I'm <span class="colbol">SECOND</span> line.
-username@localhost:~/basiccommands$
-<br />
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" -i newfile.txt<br />I'm <span class="colbol">SECOND</span> line.<br />username@localhost:~/basiccommands$<br />
+</code></pre></div>
 <p><br /></p>
 
 <h2 id="11-rm">11. rm</h2>
@@ -496,18 +488,18 @@ username@localhost:~/basiccommands$
 <p class="terminal">Terminal</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ rm file.txt
 username@localhost:~/basiccommands$
-<br />
+
 </code></pre></div></div>
 <p><br /></p>
 
 <p><code class="highlighter-rouge">-r</code> or <code class="highlighter-rouge">--recursive</code> removes directories and their contents recursively.</p>
 
-<p><br /></p>
 <p class="terminal">Terminal</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ rm -r directory/
 username@localhost:~/basiccommands$
-<br />
+
 </code></pre></div></div>
+
 <p><br /></p>
 
 <h2 id="12-mv">12. mv</h2>
@@ -519,10 +511,11 @@ username@localhost:~/basiccommands$
 </blockquote>
 
 <p class="terminal">Terminal</p>
-<div class="highlighter-rouge">
-    <pre class="highlight"><code>username@localhost:~/basiccommands$ mv oldname.txt newname.txt<br />username@localhost:~/basiccommands$ mv oldname_dir newname_dir<br />username@localhost:~/basiccommands$
-    </code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ mv oldname.txt newname.txt
+username@localhost:~/basiccommands$ mv oldname_dir newname_dir
+username@localhost:~/basiccommands$
+
+</code></pre></div></div>
 <p><br /></p>
 
 <p>To move a file or a directory to an other directory you have to do like that :</p>
@@ -533,4 +526,85 @@ username@localhost:~/basiccommands$
     </code></pre>
 </div>
 <p><br /></p>
+
+<h2 id="13-history">13. history</h2>
+
+<p><strong>history</strong> shows a list of the command entered since the session began.</p>
+
+<blockquote>
+  <p>history OPTIONS</p>
+</blockquote>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ history<br />   1  ls<br />   2  cd<br />   3  pwd
+    </code></pre>
+</div>
+<p><br /></p>
+
+<p><code class="highlighter-rouge">history #</code> displays the latest # commands from history</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ history 2<br />   1  ls<br />   2  cd
+    </code></pre>
+</div>
+<p><br /></p>
+
+<p><code class="highlighter-rouge">!#</code> repeats the #th command from history</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ !3<br />pwd<br />/home/username/basiccommands
+    </code></pre>
+</div>
+<p><br /></p>
+
+<p><code class="highlighter-rouge">!!</code> repeats the most recent command from history</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ !!<br />pwd<br />/home/username/basiccommands
+    </code></pre>
+</div>
+<p><br /></p>
+
+<p><code class="highlighter-rouge">history -d #</code> deletes the numbered line from history</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ history -d 3<br />username@localhost:~/basiccommands$
+    </code></pre>
+</div>
+<p><br /></p>
+
+<p><code class="highlighter-rouge">history -c</code> deletes the numbered line from history</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ history -c<br />username@localhost:~/basiccommands$ 
+    </code></pre>
+</div>
+<p><br />
+=======</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ mv newname.txt newname_dir/
+username@localhost:~/basiccommands$
+
+</code></pre></div></div>
+<p><br /></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p>3e16ce8294d7cc8cbee6e8cbfe2702aa36d3543f</p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
 :ET
