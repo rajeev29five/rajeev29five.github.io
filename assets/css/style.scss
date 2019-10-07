@@ -3,6 +3,27 @@
 
 @import "jekyll-theme-slate";
 
+h2 {
+    a {
+        margin-left: 10px;
+        outline: none;
+        opacity: 0;
+        transition: opacity .2s;
+
+        img {
+            height: 18px;
+            width: 18px;
+            padding: 0;
+            margin: 0;
+            box-shadow: none;
+            border: none;
+        }
+    }
+    &:hover a {
+        opacity: 1;
+    }
+}
+
 .go-top {
     position: fixed;
     right: 2rem;

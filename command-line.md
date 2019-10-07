@@ -42,7 +42,7 @@ A prompt has four parts.
 
 <br>
 
-## 1. ls
+## 1. ls[![link](assets/images/link_icon.svg)](#1-ls)
 
 **ls** stands for list. It lists the contents of directory(file(s) and subdirectory(ies)) with additional information. 
 
@@ -150,7 +150,7 @@ in your **Terminal**. The **man** command will output manual for the particular 
 
 <br>
 
-## 2. mkdir
+## 2. mkdir[![link](assets/images/link_icon.svg)](#2-mkdir)
 
 **mkdir** stands for make directory. A directory is a folder. Command creates directory(ies), if they do not already exist.
 
@@ -191,7 +191,7 @@ Similarly create directory within **GreatGrandParentFolder** named **GrandParent
 
 <br>
 
-## 3. cd
+## 3. cd[![link](assets/images/link_icon.svg)](#3-cd)
 
 **cd** stands for change directory. Used to traverse directory(ies). 
 
@@ -228,7 +228,7 @@ In above example current directory is **basiccommands** and its immediate previo
 
 <br>
 
-## 4. pwd
+## 4. pwd[![link](assets/images/link_icon.svg)](#4-pwd)
 
 **pwd** stands for "print working directory", it prints absolute pathname of the current working directory. 
 
@@ -242,7 +242,7 @@ username@localhost:~/basiccommands$
 ```
 <br>
 
-## 5. touch
+## 5. touch[![link](assets/images/link_icon.svg)](#5-touch)
 
 An empty file that does not already exists in the current working directory is created.
 
@@ -267,7 +267,7 @@ Well something did happen a file named **newfile.txt** has been created in the c
 
 <br>
 
-## 6. chmod
+## 6. chmod[![link](assets/images/link_icon.svg)](#6-chmod)
 
 **chmod** stands for change mode. Changes the file or directory(ies) mode bits(access permissions) of each given file according to _mode_, which can either be an octal number(digits 0 through 7) representing the bit pattern for new mode bits or a symbolic representations.
 
@@ -345,7 +345,7 @@ Try different octal notation to change file access permissions.
 
 <br>
 
-## 7. head
+## 7. head[![link](assets/images/link_icon.svg)](#7-head)
 
 Prints the first 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied **`n`** number of lines are printed to standard output. Let us see the content of the file that we created using touch command.
 
@@ -383,7 +383,7 @@ username@localhost:~/basiccommands$
 **NOTE :** As an exercise use `-n or --lines` with multiple files.
 <br>
 
-## 8. tail
+## 8. tail[![link](assets/images/link_icon.svg)](#8-tail)
 
 **tail** prints the last 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If **`-n`** or **`--lines`** is supplied, then **n** number of lines are printed to standard output.
 
@@ -407,7 +407,7 @@ Explore different [OPTIONS] that can be used with **tail** command(use `man tail
 
 <br>
 
-## 9. cat
+## 9. cat[![link](assets/images/link_icon.svg)](#9-cat)
 
 **cat** stands for concatnate. It concatenates file(s) to standard output.
 
@@ -450,7 +450,7 @@ If you want to learn more about **cat** command, enter `man cat` in your termina
 
 <br>
 
-## 10. grep
+## 10. grep[![link](assets/images/link_icon.svg)](#10-grep)
 
 **grep** stands for global regular expression print. It searches for PATTERN in each file and prints the matching line.
 
@@ -477,7 +477,7 @@ username@localhost:~/basiccommands$<br/>
 </code></pre></div>
 <br>
 
-## 11. rm
+## 11. rm[![link](assets/images/link_icon.svg)](#11-rm)
 
 **rm** stands for remove. It removes files or directories.
 
@@ -503,7 +503,7 @@ username@localhost:~/basiccommands$
 
 <br>
 
-## 12. mv
+## 12. mv[![link](assets/images/link_icon.svg)](#12-mv)
 
 **mv** stands for move. It moves or renames files or directories.
 
@@ -528,7 +528,7 @@ username@localhost:~/basiccommands$
 ```
 <br>
 
-## 13. history
+## 13. history[![link](assets/images/link_icon.svg)](#13-history)
 
 **history** shows a list of the command entered since the session began.
 
