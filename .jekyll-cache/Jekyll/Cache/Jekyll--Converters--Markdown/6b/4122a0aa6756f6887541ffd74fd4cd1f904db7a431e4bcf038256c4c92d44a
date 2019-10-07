@@ -1,0 +1,536 @@
+I"�`<hr />
+
+<h2 id="what-is-a-command">What is a command?</h2>
+<p>A command is an instruction given to computer to do something, such as run a program or group of programs. These commands are given to computer by typing it in command-line or a terminal and then pressing ENTER key, which in turn will pass them to the shell. Most of the commands take the following form.</p>
+
+<blockquote>
+  <p>command [OPTIONS] arguments</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">command name </code>: The command you want to give to the computer.</p>
+
+<p><code class="highlighter-rouge">[OPTIONS] </code>: Known as flags or arguments to specify command how to act. These are often preceded by single(<code class="highlighter-rouge">-</code>) or double(<code class="highlighter-rouge">--</code>) dash and can be left out in case of certain commands.</p>
+
+<p><code class="highlighter-rouge">arguments </code>: additional information that tells the command to what to work on such as file or directory name. It may or may not be necessary depending on the command used.</p>
+
+<h2 id="what-is-a-terminal">What is a Terminal?</h2>
+
+<p>A terminal is text-based application used for viewing, manipulating and handling files on your computer. It can be considered as Windows’ File Explorer or Mac’s Finder without a graphical interface. It is also known as <strong>CLI, command line, console, prompts</strong>.</p>
+
+<p>This is what a prompt looks like on linux system.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$
+
+
+</code></pre></div></div>
+
+<p><br />
+A prompt has four parts.</p>
+
+<p><code class="highlighter-rouge">username </code>:  Shows the username of current user.</p>
+
+<p><code class="highlighter-rouge">hostname </code>:  This is the name of your computer.</p>
+
+<p><code class="highlighter-rouge">absolutepathname </code>: Shows the absolute path name of current working directory. In this case it is <strong>home</strong> directory represented by the symbol tilde(~).</p>
+
+<p><code class="highlighter-rouge">currentuser </code>: The shell prompt normally ends in a <strong>$</strong> sign which means that the user is logged in as normal user with restricted access to resources, while <strong>#</strong> indicates that you are logged in as <strong>root</strong> also know as <strong>super user</strong> and can access nearly all resources which is other wise accessible to few programs.</p>
+
+<p><strong>NOTE :</strong> You should avoid logging in as root unless necessary as it makes your system vulnerable.</p>
+
+<p><br /></p>
+
+<h2 id="1-ls">1. ls</h2>
+
+<p><strong>ls</strong> stands for list. It lists the contents of directory(file(s) and subdirectory(ies)) with additional information.</p>
+
+<p><strong>ls</strong> takes the following form.</p>
+
+<blockquote>
+  <p>ls [OPTIONS] arguments</p>
+</blockquote>
+
+<p>Type the command</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+username@localhost:~$ 
+
+</code></pre></div></div>
+
+<p>Some of the most common arguments(also known as flags) that can be used with <strong>ls</strong> are :</p>
+
+<p><code class="highlighter-rouge">-a or --all</code> : lists the contents of directroy including hidden file(s) or directory(ies).
+<code class="highlighter-rouge">-l</code> : lists the contents using long listing formats.</p>
+
+<p><strong>NOTE :</strong> In linux hidden file(s) or directory(ies) can be easily distinguished from regular because their name are prefixed by a period(i.e <strong>dot character ‘.’</strong> ).</p>
+
+<p>Type the ls command with <code class="highlighter-rouge">-a or --all</code> argument in <strong>Terminal</strong>.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$ ls -a
+.               .cache          Music           Videos
+..              Desktop         Pictures
+.bash_history   Documents       Public
+.bashrc         Downloads       Templates
+username@localhost:~$ 
+
+</code></pre></div></div>
+
+<p><strong><code class="highlighter-rouge">.</code></strong> represents the current working directory <strong><code class="highlighter-rouge">..</code></strong> and all the other file(s) or directory(ies) prefixed by a period(dot) such as <strong>.bashrc</strong>, <strong>.cache</strong>, etc are hidden.</p>
+
+<p>Next type the ls command with <code class="highlighter-rouge">-l</code> argument in your <strong>Terminal</strong>.</p>
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$ ls -l
+drwxr-xr-x 2 username username 4096 Apr  8 16:45 Desktop
+drwxr-xr-x 2 username username 4096 Jun 10 00:08 Documents
+drwxr-xr-x 2 username username 4096 Jun 21 09:18 Downloads
+drwxr-xr-x 2 username username 4096 Jun 11 05:47 Music
+drwxr-xr-x 2 username username 4096 Jun 13 04:56 Pictures
+drwxr-xr-x 2 username username 4096 Jul 24  2017 Public
+drwxr-xr-x 2 username username 4096 Jul 24  2017 Templates
+drwxr-xr-x 2 username username 4096 Jun 17 22:21 Videos
+username@localhost:~$ 
+
+</code></pre></div></div>
+<p></p>
+<ol>
+  <li>First column shows the file’s type and file mode bits. Type is shown as <code class="highlighter-rouge">-</code> for regular files, in above case type is <code class="highlighter-rouge">d</code> which means it is a directory. We’ll discuss about file mode bits later while learning about <strong>chmod</strong> command.</li>
+  <li>The number of hard links to the file.</li>
+  <li>The user who owns the file.</li>
+  <li>The file’s group.</li>
+  <li>The file’s size in bytes.</li>
+  <li>The date the file was last modified.</li>
+</ol>
+
+<p>Using name of directory as an argument to <strong>ls</strong> command will list the contents of directory.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$ ls Downloads/
+bootstrap-4.0.0-dist 	
+bootstrap-4.0.0-dist.zip
+opencv-python-tutroals
+Westworld The Passenger
+username@localhost:~$ 
+
+</code></pre></div></div>
+
+<p>A simple trick, instead of typing the whole thing in <strong>Terminal</strong> yourself press <strong>tab key</strong> after typing some part of the command.</p>
+
+<p>For instance after typing</p>
+
+<blockquote>
+  <p>username@localhost:~$ <strong>ls Dow</strong></p>
+</blockquote>
+
+<p>hit <strong>tab</strong> key once to autocomplete your command.</p>
+
+<p>To list the contents of directory that is located deep within a directory, provide absolute pathname of the directory whose content you want to as an argument to <strong>ls</strong> command.</p>
+
+<p>The below example lists the contents of <strong>ChildFolder</strong> that is 3 levels deep inside the <strong>GreatParentFolder</strong>.</p>
+
+<p><strong>Remiders</strong> do not type the whole name yourself hit <strong>tab</strong> as much as you can.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$ ls GreatGrandParentFolder/GrandParentFolder/ParentFolder/ChildFolder/         
+child.txt
+username@localhost:~$ 
+
+</code></pre></div></div>
+
+<p>To learn more about <strong>ls</strong> or any command, type</p>
+
+<blockquote>
+  <p><strong>man command_name</strong></p>
+</blockquote>
+
+<p>in your <strong>Terminal</strong>. The <strong>man</strong> command will output manual for the particular command to the standard output.</p>
+
+<p><strong>Exercise :</strong> Explore different arguments or flags with the help of <strong>man</strong> command that you can use with <strong>ls</strong> command.</p>
+
+<p><br /></p>
+
+<h2 id="2-mkdir">2. mkdir</h2>
+
+<p><strong>mkdir</strong> stands for make directory. A directory is a folder. Command creates directory(ies), if they do not already exist.</p>
+
+<p><strong>mkdir</strong> takes the following form.</p>
+
+<blockquote>
+  <p>mkdir [OPTIONS] name_of_directory</p>
+</blockquote>
+
+<p>Let’s create a directory on which we can experiment.</p>
+
+<p>Type in the following command in your <strong>Terminal</strong>. Use whatever name you want for your directory, I’m naming my directory basiccommands.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$ mkdir basiccommands
+username@localhost:~$ 
+
+
+
+</code></pre></div></div>
+
+<p><strong>NOTE :</strong> Be careful while using space(s) in naming you directory. Simply using space(s) in name will create multiple directories. To have spaces in name use backslash <code class="highlighter-rouge">\</code> before space and just after the word  <code class="highlighter-rouge">$ mkdir my\ directory</code>.</p>
+
+<p>You can use <strong>ls</strong> command to check if your directory has been created or not.</p>
+
+<p>To create directory within another directory, provide the absolute path as an argument to <strong>mkdir</strong>. Let’s create another directory within <strong>basiccommands</strong> directory name <strong>GreatGrandParentFolder</strong>.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$ mkdir basiccommands/GreatGrandParentFolder
+username@localhost:~$ 
+
+
+
+</code></pre></div></div>
+
+<p>Similarly create directory within <strong>GreatGrandParentFolder</strong> named <strong>GrandParentFolder</strong>… till <strong>GreatGrandChildFolder</strong>. We will use this deep directory structure with our next command that is <strong>cd</strong>.</p>
+
+<p><br /></p>
+
+<h2 id="3-cd">3. cd</h2>
+
+<p><strong>cd</strong> stands for change directory. Used to traverse directory(ies).</p>
+
+<p>Command takes the following form,</p>
+
+<blockquote>
+  <p>cd [OPTIONS] [dir]</p>
+</blockquote>
+
+<p>If name of directory(in above case “dir”) is not supplied, working directory is changed to root or home. If <strong><code class="highlighter-rouge">..</code></strong> is supplied, working directory is set to the directory immediate previous of current working directory. If <strong><code class="highlighter-rouge">-</code></strong> is supplied old working directory is set to current working directory, if the directory change is successful, the absolute pathname of the new working directory is written to the standard  output.</p>
+
+<p>For now let’s change our working directory to the directory you created with the help of <strong>mkdir</strong> command.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~$ cd basiccommands
+username@localhost:~/basiccommands$
+
+
+
+</code></pre></div></div>
+<p><br /></p>
+
+<p>As mentioned before <strong><code class="highlighter-rouge">..</code></strong> with <strong>cd</strong> changes the working directory to immediate previous of the current working directory.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ cd ..
+username@localhost:~$
+
+
+
+</code></pre></div></div>
+
+<p>In above example current directory is <strong>basiccommands</strong> and its immediate previous is the <strong>root or home</strong> directory(denoted by <strong><code class="highlighter-rouge">~</code></strong>).</p>
+
+<p><br /></p>
+
+<h2 id="4-pwd">4. pwd</h2>
+
+<p><strong>pwd</strong> stands for “print working directory”, it prints absolute pathname of the current working directory.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ pwd
+/home/username/basiccommands
+username@localhost:~/basiccommands$
+
+
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="5-touch">5. touch</h2>
+
+<p>An empty file that does not already exists in the current working directory is created.</p>
+
+<p><strong>touch</strong> takes the following form.</p>
+
+<blockquote>
+  <p>touch [OPTIONS] name_of_file</p>
+</blockquote>
+
+<p>Type the following command in your teminal and the press ENTER.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ touch newfile.txt
+username@localhost:~/basiccommands$
+
+
+
+</code></pre></div></div>
+
+<p>Nothing happened? :(</p>
+
+<p>Well something did happen a file named <strong>newfile.txt</strong> has been created in the current working directory. To check whether the file has been created or not, list the contents of your current working directory. You know the command for that, don’t you?</p>
+
+<p><br /></p>
+
+<h2 id="6-chmod">6. chmod</h2>
+
+<p><strong>chmod</strong> stands for change mode. Changes the file or directory(ies) mode bits(access permissions) of each given file according to <em>mode</em>, which can either be an octal number(digits 0 through 7) representing the bit pattern for new mode bits or a symbolic representations.</p>
+
+<p>Before learning more about <strong>mode bits</strong>. Let us see the current access permission of our file. For that use <code class="highlighter-rouge">ls -l</code> command.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ ls -l
+-rw-rw-r-- 1 username username 51 Jun 24 20:00 newfile.txt
+username@localhost:~/basiccommands$
+
+
+
+</code></pre></div></div>
+
+<p>The file mode bits are <strong>read</strong> denoted by <strong>r</strong> indicating that user has just reading privileges, <strong>write</strong> denoted by <strong>w</strong> indicating user can make changes, and <strong>execute</strong> denoted by <strong>x</strong> indicating that user can run it as a program, for the file’s owner, its group, and other users, respectively; a dash means the permission is not granted.</p>
+
+<p>Let’s change the mode bit using symbolic notation. Symbolic notation takes the following form</p>
+
+<blockquote>
+  <p>chmod [reference][operator][modes] filename</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">reference : </code> There are four references <strong>u(user/owner), g(group), o(other)</strong> and <strong>a(all u, g and o)</strong>.</p>
+
+<p><code class="highlighter-rouge">operator : </code> There are three operators <strong>+(add mode bit to specified reference), -(remove mode bit from specified reference)</strong> and <strong>=(modes specified should be made exact modes for specified reference)</strong>.</p>
+
+<p><code class="highlighter-rouge">mode : </code> There six modes <strong>r(read), w(write), x(execute), X(special execute), s(setuid/gid)</strong> and <strong>t(sticky)</strong>.</p>
+
+<p>Type the command in your <strong>Terminal</strong> as shown below.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ chmod u=rwx,g=rw,o=r newfile.txt
+username@localhost:~/basiccommands$
+
+
+
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">ls -l</code> again to see the difference between old and new access permissions.</p>
+
+<p>Now using the octal permissions. The current access permission of <strong>newfile.txt</strong> is <strong>rwx</strong> for <strong>user/owner</strong>, <strong>rw</strong> for <strong>group</strong> and <strong>r</strong> for <strong>other</strong>. Let’s change the permission for <strong>user</strong> from <strong>r</strong> to <strong>rx</strong> using octal notation and leave <strong>user/owner</strong> and <strong>group</strong> as it is.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ chmod 765 newfile.txt
+username@localhost:~/basiccommands$
+
+
+
+</code></pre></div></div>
+
+<p>Type <code class="highlighter-rouge">ls -l</code> and you will notice that now the permission for <strong>newfile.txt</strong> looks something like this <code class="highlighter-rouge">-rwxrw-r-x</code>.</p>
+
+<p>The octal notation <strong>7, 6 and 5</strong> individually represent <strong>user/owner</strong>, <strong>group</strong> and <strong>other</strong> respectively. In fact these numbers are combination of digit <code class="highlighter-rouge">4</code> that represents <strong>read</strong>, <code class="highlighter-rouge">2</code> that represents <strong>write</strong>, <code class="highlighter-rouge">1</code> that represents <strong>execute</strong> and <code class="highlighter-rouge">0</code> that represents <strong>no permission</strong>. Therefore in case of above example</p>
+
+<p><strong>7</strong> = <strong>4(read)</strong> + <strong>2(write)</strong> + <strong>1(execute)</strong></p>
+
+<p><strong>6</strong> = <strong>4(read)</strong> + <strong>2(write)</strong> + <strong>0(no permission)</strong></p>
+
+<p><strong>5</strong> = <strong>4(read)</strong> + <strong>0(no permission)</strong> + <strong>1(execute)</strong></p>
+
+<p>To change mode bits of a directory use <code class="highlighter-rouge">-R</code> argument with chmod as shown below. Using <code class="highlighter-rouge">-R</code> with <strong>chmod</strong> will recursively change the mode bits of all the files inside that directory to specified modes.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ chmod 777 -R directory
+username@localhost:~/basiccommands$
+
+
+
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Try different octal notation to change file access permissions.</p>
+
+<p><br /></p>
+
+<h2 id="7-head">7. head</h2>
+
+<p>Prints the first 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If <strong><code class="highlighter-rouge">-n</code></strong> or <strong><code class="highlighter-rouge">--lines</code></strong> is supplied <strong><code class="highlighter-rouge">n</code></strong> number of lines are printed to standard output. Let us see the content of the file that we created using touch command.</p>
+
+<blockquote>
+  <p>head [OPTIONS] FILE(s)</p>
+</blockquote>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ head newfile.txt
+I'm first line.
+I'm second line.
+I'm third line.
+.
+.
+.
+I'm tenth line.
+username@localhost:~/basiccommands$ 
+
+</code></pre></div></div>
+<p><br />
+To print first <strong>n</strong> number of line(s) of a file. In the following example I’m printing first <strong>3</strong> lines of <strong>newfile.txt</strong>.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ head -n 3 newfile.txt
+I'm first line.
+I'm second line.
+I'm third line.
+username@localhost:~/basiccommands$
+
+
+
+
+</code></pre></div></div>
+<p><br />
+<strong>NOTE :</strong> As an exercise use <code class="highlighter-rouge">-n or --lines</code> with multiple files.
+<br /></p>
+
+<h2 id="8-tail">8. tail</h2>
+
+<p><strong>tail</strong> prints the last 10 lines of each file to standard output. In case more than one file is specified, standard output of each file is preceded by header giving the file name. If <strong><code class="highlighter-rouge">-n</code></strong> or <strong><code class="highlighter-rouge">--lines</code></strong> is supplied, then <strong>n</strong> number of lines are printed to standard output.</p>
+
+<blockquote>
+  <p>tail [OPTIONS] FILE(s)</p>
+</blockquote>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ tail newfile.txt
+I'm eleventh line.
+I'm twelveth line.
+.
+.
+.
+I'm last line.
+username@localhost:~/basiccommands$
+
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Explore different [OPTIONS] that can be used with <strong>tail</strong> command(use <code class="highlighter-rouge">man tail</code> to see available [OPTIONS]).</p>
+
+<p><br /></p>
+
+<h2 id="9-cat">9. cat</h2>
+
+<p><strong>cat</strong> stands for concatnate. It concatenates file(s) to standard output.</p>
+
+<blockquote>
+  <p>cat [OPTIONS] FILE(s)</p>
+</blockquote>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ cat newfile.txt
+I'm first line.
+I'm second line.
+.
+.
+.
+I'm last line.
+username@localhost:~/basiccommands$
+
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Use <code class="highlighter-rouge">-n or --number</code> to number the output lines.</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ cat newfile.txt
+1  I'm first line.
+2  I'm second line.
+3  I'm third line.
+.   . 
+.   . 
+.   .
+.   .
+10 I'm last line.
+username@localhost:~/basiccommands$
+
+</code></pre></div></div>
+<p><br /></p>
+
+<p>If you want to learn more about <strong>cat</strong> command, enter <code class="highlighter-rouge">man cat</code> in your terminal.</p>
+
+<p><br /></p>
+
+<h2 id="10-grep">10. grep</h2>
+
+<p><strong>grep</strong> stands for global regular expression print. It searches for PATTERN in each file and prints the matching line.</p>
+
+<blockquote>
+  <p>grep pattern FILE(s)</p>
+</blockquote>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" newfile.txt
+I'm <span class="colbol">second</span> line.
+username@localhost:~/basiccommands$
+<br />
+</code></pre></div></div>
+<p><br /></p>
+
+<p><code class="highlighter-rouge">-n</code> or <code class="highlighter-rouge">--line-number</code> prefixes each line of output with 1-based numbering.</p>
+
+<p><br /></p>
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" newfile.txt
+<strong>2: </strong>I'm <span class="colbol">second</span> line.
+username@localhost:~/basiccommands$
+<br />
+</code></pre></div></div>
+<p><br /></p>
+
+<p><code class="highlighter-rouge">-i</code> or <code class="highlighter-rouge">--ignore-case</code> matches pattern in the file irrespective of case distinctions(upper or lower case). Change any letter that you want search to uppercase in <strong>newfile.txt</strong>. For example I am changing <strong>second</strong> to <strong>SECOND</strong> in newfile.txt. 
+<br /></p>
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ grep "second" -i newfile.txt
+I'm <span class="colbol">SECOND</span> line.
+username@localhost:~/basiccommands$
+<br />
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="11-rm">11. rm</h2>
+
+<p><strong>rm</strong> stands for remove. It removes files or directories.</p>
+
+<blockquote>
+  <p>rm [OPTIONS] FILE(s)</p>
+</blockquote>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ rm file.txt
+username@localhost:~/basiccommands$
+<br />
+</code></pre></div></div>
+<p><br /></p>
+
+<p><code class="highlighter-rouge">-r</code> or <code class="highlighter-rouge">--recursive</code> removes directories and their contents recursively.</p>
+
+<p><br /></p>
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username@localhost:~/basiccommands$ rm -r directory/
+username@localhost:~/basiccommands$
+<br />
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="12-mv">12. mv</h2>
+
+<p><strong>mv</strong> stands for move. It moves or renames files or directories.</p>
+
+<blockquote>
+  <p>mv FILE DESTINATION</p>
+</blockquote>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ mv oldname.txt newname.txt<br />username@localhost:~/basiccommands$ mv oldname_dir newname_dir<br />username@localhost:~/basiccommands$
+    </code></pre>
+</div>
+<p><br /></p>
+
+<p>To move a file or a directory to an other directory you have to do like that :</p>
+
+<p class="terminal">Terminal</p>
+<div class="highlighter-rouge">
+    <pre class="highlight"><code>username@localhost:~/basiccommands$ mv newname.txt newname_dir/<br />username@localhost:~/basiccommands$
+    </code></pre>
+</div>
+<p><br /></p>
+:ET
