@@ -586,3 +586,56 @@ username@localhost:~/basiccommands$
     </code></pre>
 </div>
 <br>
+
+## 11. last command
+
+**last**a) this command is used to display the list of all the users to logged into our computer system. 
+
+#> last
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last
+
+```
+<br>
+#> last -5
+the flag -5 will only dispaly last 5 users who were logged into the system 
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last -5
+
+```
+<br>
+
+#> last -R basil
+this will hide the host field name 
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last -R basil
+
+```
+<br>
+
+#> last -F
+this command will displaythe login and logout time with their respective dates
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last -F
+
+```
+<br>
+
+#> last -a
+this command will put the host column to the very last
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last -a
+
+```
+<br>
+
