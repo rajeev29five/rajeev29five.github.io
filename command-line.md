@@ -587,11 +587,12 @@ username@localhost:~/basiccommands$
 </div>
 <br>
 
-## 11. last command
+## 14. last command
 
-**last**a) this command is used to display the list of all the users to logged into our computer system. 
+**last**
+a) this command is used to display the list of all the users to logged into our computer system. 
 
-#> last
+`last`
 
 <p class="terminal">Terminal</p>
 ```
@@ -599,7 +600,7 @@ username@localhost:~/basiccommands$ last
 
 ```
 <br>
-#> last -5
+`last -5`
 the flag -5 will only dispaly last 5 users who were logged into the system 
 
 <p class="terminal">Terminal</p>
@@ -607,9 +608,41 @@ the flag -5 will only dispaly last 5 users who were logged into the system
 username@localhost:~/basiccommands$ last -5
 
 ```
+```output: uddeshya :0           :0               Thu Aug  6 09:51   still logged in
+reboot   system boot  5.3.0-62-generic Thu Aug  6 09:49   still running
+uddeshya :0           :0               Wed Aug  5 18:52 - 20:00  (01:07)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 18:51 - 20:00  (01:08)
+uddeshya :0           :0               Wed Aug  5 13:43 - 17:15  (03:32)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 13:42 - 17:15  (03:33)
+uddeshya :0           :0               Wed Aug  5 08:10 - 11:37  (03:27)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 08:09 - 11:37  (03:28)
+uddeshya :0           :0               Tue Aug  4 20:23 - 21:50  (01:27)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 20:22 - 21:50  (01:28)
+uddeshya :0           :0               Tue Aug  4 16:07 - 17:34  (01:27)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 16:06 - 17:36  (01:29)
+uddeshya :0           :0               Tue Aug  4 11:58 - 14:58  (02:59)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 11:58 - 14:58  (03:00)
+uddeshya :0           :0               Mon Aug  3 19:26 - down   (00:27)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 19:25 - 19:54  (00:28)
+uddeshya :0           :0               Mon Aug  3 11:43 - 12:44  (01:00)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 11:42 - 12:44  (01:01)
+uddeshya :0           :0               Mon Aug  3 07:36 - 08:16  (00:40)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 07:35 - 08:16  (00:41)
+uddeshya :0           :0               Sun Aug  2 19:55 - 22:13  (02:17)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 19:54 - 22:13  (02:18)
+uddeshya :0           :0               Sun Aug  2 13:01 - down   (02:16)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 13:00 - 15:17  (02:17)
+uddeshya :0           :0               Sun Aug  2 08:10 - 08:55  (00:45)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 08:09 - 08:55  (00:46)
+uddeshya :0           :0               Sat Aug  1 12:16 - 12:51  (00:34)
+reboot   system boot  5.3.0-62-generic Sat Aug  1 12:12 - 12:51  (00:38)
+
+wtmp begins Sat Aug  1 10:06:19 2020
+```
 <br>
 
-#> last -R basil
+``` 
+`last -R basil`
 this will hide the host field name 
 
 <p class="terminal">Terminal</p>
@@ -617,9 +650,14 @@ this will hide the host field name
 username@localhost:~/basiccommands$ last -R basil
 
 ```
+```
+output:
+wtmp begins Sat Aug  1 10:06:19 2020
+
+```
 <br>
 
-#> last -F
+`last -F`
 this command will displaythe login and logout time with their respective dates
 
 <p class="terminal">Terminal</p>
@@ -627,9 +665,43 @@ this command will displaythe login and logout time with their respective dates
 username@localhost:~/basiccommands$ last -F
 
 ```
+```
+output:
+uddeshya :0           :0               Thu Aug  6 09:51:45 2020   still logged in
+reboot   system boot  5.3.0-62-generic Thu Aug  6 09:49:52 2020   still running
+uddeshya :0           :0               Wed Aug  5 18:52:50 2020 - Wed Aug  5 20:00:12 2020  (01:07)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 18:51:45 2020 - Wed Aug  5 20:00:15 2020  (01:08)
+uddeshya :0           :0               Wed Aug  5 13:43:46 2020 - Wed Aug  5 17:15:51 2020  (03:32)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 13:42:01 2020 - Wed Aug  5 17:15:54 2020  (03:33)
+uddeshya :0           :0               Wed Aug  5 08:10:20 2020 - Wed Aug  5 11:37:38 2020  (03:27)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 08:09:21 2020 - Wed Aug  5 11:37:40 2020  (03:28)
+uddeshya :0           :0               Tue Aug  4 20:23:35 2020 - Tue Aug  4 21:50:36 2020  (01:27)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 20:22:19 2020 - Tue Aug  4 21:50:38 2020  (01:28)
+uddeshya :0           :0               Tue Aug  4 16:07:33 2020 - Tue Aug  4 17:34:47 2020  (01:27)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 16:06:40 2020 - Tue Aug  4 17:36:18 2020  (01:29)
+uddeshya :0           :0               Tue Aug  4 11:58:58 2020 - Tue Aug  4 14:58:04 2020  (02:59)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 11:58:05 2020 - Tue Aug  4 14:58:08 2020  (03:00)
+uddeshya :0           :0               Mon Aug  3 19:26:22 2020 - down                      (00:27)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 19:25:27 2020 - Mon Aug  3 19:54:09 2020  (00:28)
+uddeshya :0           :0               Mon Aug  3 11:43:50 2020 - Mon Aug  3 12:44:25 2020  (01:00)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 11:42:54 2020 - Mon Aug  3 12:44:28 2020  (01:01)
+uddeshya :0           :0               Mon Aug  3 07:36:06 2020 - Mon Aug  3 08:16:25 2020  (00:40)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 07:35:10 2020 - Mon Aug  3 08:16:27 2020  (00:41)
+uddeshya :0           :0               Sun Aug  2 19:55:45 2020 - Sun Aug  2 22:13:25 2020  (02:17)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 19:54:50 2020 - Sun Aug  2 22:13:28 2020  (02:18)
+uddeshya :0           :0               Sun Aug  2 13:01:44 2020 - down                      (02:16)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 13:00:44 2020 - Sun Aug  2 15:17:54 2020  (02:17)
+uddeshya :0           :0               Sun Aug  2 08:10:19 2020 - Sun Aug  2 08:55:35 2020  (00:45)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 08:09:05 2020 - Sun Aug  2 08:55:37 2020  (00:46)
+uddeshya :0           :0               Sat Aug  1 12:16:20 2020 - Sat Aug  1 12:51:14 2020  (00:34)
+reboot   system boot  5.3.0-62-generic Sat Aug  1 12:12:56 2020 - Sat Aug  1 12:51:18 2020  (00:38)
+
+wtmp begins Sat Aug  1 10:06:19 2020
+
+```
 <br>
 
-#> last -a
+`last -a`
 this command will put the host column to the very last
 
 <p class="terminal">Terminal</p>
@@ -637,5 +709,40 @@ this command will put the host column to the very last
 username@localhost:~/basiccommands$ last -a
 
 ```
+```
+output:
+uddeshya :0           Thu Aug  6 09:51   still logged in    :0
+reboot   system boot  Thu Aug  6 09:49   still running      5.3.0-62-generic
+uddeshya :0           Wed Aug  5 18:52 - 20:00  (01:07)     :0
+reboot   system boot  Wed Aug  5 18:51 - 20:00  (01:08)     5.3.0-62-generic
+uddeshya :0           Wed Aug  5 13:43 - 17:15  (03:32)     :0
+reboot   system boot  Wed Aug  5 13:42 - 17:15  (03:33)     5.3.0-62-generic
+uddeshya :0           Wed Aug  5 08:10 - 11:37  (03:27)     :0
+reboot   system boot  Wed Aug  5 08:09 - 11:37  (03:28)     5.3.0-62-generic
+uddeshya :0           Tue Aug  4 20:23 - 21:50  (01:27)     :0
+reboot   system boot  Tue Aug  4 20:22 - 21:50  (01:28)     5.3.0-62-generic
+uddeshya :0           Tue Aug  4 16:07 - 17:34  (01:27)     :0
+reboot   system boot  Tue Aug  4 16:06 - 17:36  (01:29)     5.3.0-62-generic
+uddeshya :0           Tue Aug  4 11:58 - 14:58  (02:59)     :0
+reboot   system boot  Tue Aug  4 11:58 - 14:58  (03:00)     5.3.0-62-generic
+uddeshya :0           Mon Aug  3 19:26 - down   (00:27)     :0
+reboot   system boot  Mon Aug  3 19:25 - 19:54  (00:28)     5.3.0-62-generic
+uddeshya :0           Mon Aug  3 11:43 - 12:44  (01:00)     :0
+reboot   system boot  Mon Aug  3 11:42 - 12:44  (01:01)     5.3.0-62-generic
+uddeshya :0           Mon Aug  3 07:36 - 08:16  (00:40)     :0
+reboot   system boot  Mon Aug  3 07:35 - 08:16  (00:41)     5.3.0-62-generic
+uddeshya :0           Sun Aug  2 19:55 - 22:13  (02:17)     :0
+reboot   system boot  Sun Aug  2 19:54 - 22:13  (02:18)     5.3.0-62-generic
+uddeshya :0           Sun Aug  2 13:01 - down   (02:16)     :0
+reboot   system boot  Sun Aug  2 13:00 - 15:17  (02:17)     5.3.0-62-generic
+uddeshya :0           Sun Aug  2 08:10 - 08:55  (00:45)     :0
+reboot   system boot  Sun Aug  2 08:09 - 08:55  (00:46)     5.3.0-62-generic
+uddeshya :0           Sat Aug  1 12:16 - 12:51  (00:34)     :0
+reboot   system boot  Sat Aug  1 12:12 - 12:51  (00:38)     5.3.0-62-generic
+
+wtmp begins Sat Aug  1 10:06:19 2020
+
+```
+
 <br>
 
