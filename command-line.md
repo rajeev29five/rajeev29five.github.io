@@ -586,3 +586,234 @@ username@localhost:~/basiccommands$
     </code></pre>
 </div>
 <br>
+
+## 14. last command
+
+**last**
+This command is used to display the list of all the users to logged into our computer system. 
+
+`last`
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last
+username :0           :0               Mon Aug 10 08:26   still logged in
+reboot   system boot  5.4.0-42-generic Mon Aug 10 08:25   still running
+username :0           :0               Sun Aug  9 19:45 - 21:44  (01:58)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 19:44 - 21:44  (01:59)
+username :0           :0               Sun Aug  9 14:39 - 16:14  (01:35)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 14:38 - 16:14  (01:36)
+username :0           :0               Sun Aug  9 11:27 - 12:31  (01:03)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 11:26 - 12:31  (01:04)
+username :0           :0               Sun Aug  9 08:13 - 09:54  (01:40)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 08:12 - 09:54  (01:42)
+username :0           :0               Sat Aug  8 13:44 - 15:29  (01:45)
+reboot   system boot  5.4.0-42-generic Sat Aug  8 13:43 - 15:29  (01:45)
+username :0           :0               Sat Aug  8 10:16 - 11:51  (01:34)
+reboot   system boot  5.4.0-42-generic Sat Aug  8 10:15 - 11:51  (01:35)
+username :0           :0               Sat Aug  8 07:40 - 08:46  (01:06)
+reboot   system boot  5.4.0-42-generic Sat Aug  8 07:39 - 08:46  (01:07)
+username :0           :0               Fri Aug  7 19:09 - down   (01:26)
+reboot   system boot  5.4.0-42-generic Fri Aug  7 19:08 - 20:35  (01:27)
+username :0           :0               Fri Aug  7 17:00 - down   (00:56)
+reboot   system boot  5.4.0-42-generic Fri Aug  7 16:59 - 17:56  (00:56)
+username :0           :0               Fri Aug  7 12:12 - 13:34  (01:21)
+reboot   system boot  5.4.0-42-generic Fri Aug  7 12:11 - 13:34  (01:22)
+username :0           :0               Fri Aug  7 09:09 - down   (00:35)
+reboot   system boot  5.4.0-42-generic Fri Aug  7 09:08 - 09:44  (00:36)
+username :0           :0               Thu Aug  6 19:50 - 21:34  (01:43)
+reboot   system boot  5.4.0-42-generic Thu Aug  6 19:49 - 21:34  (01:45)
+username :0           :0               Thu Aug  6 17:43 - 18:18  (00:34)
+reboot   system boot  5.3.0-62-generic Thu Aug  6 17:42 - 18:18  (00:35)
+username :0           :0               Thu Aug  6 09:51 - 13:18  (03:26)
+reboot   system boot  5.3.0-62-generic Thu Aug  6 09:49 - 13:18  (03:28)
+username :0           :0               Wed Aug  5 18:52 - 20:00  (01:07)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 18:51 - 20:00  (01:08)
+username :0           :0               Wed Aug  5 13:43 - 17:15  (03:32)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 13:42 - 17:15  (03:33)
+username :0           :0               Wed Aug  5 08:10 - 11:37  (03:27)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 08:09 - 11:37  (03:28)
+username :0           :0               Tue Aug  4 20:23 - 21:50  (01:27)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 20:22 - 21:50  (01:28)
+username :0           :0               Tue Aug  4 16:07 - 17:34  (01:27)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 16:06 - 17:36  (01:29)
+username :0           :0               Tue Aug  4 11:58 - 14:58  (02:59)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 11:58 - 14:58  (03:00)
+username :0           :0               Mon Aug  3 19:26 - down   (00:27)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 19:25 - 19:54  (00:28)
+username :0           :0               Mon Aug  3 11:43 - 12:44  (01:00)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 11:42 - 12:44  (01:01)
+username :0           :0               Mon Aug  3 07:36 - 08:16  (00:40)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 07:35 - 08:16  (00:41)
+username :0           :0               Sun Aug  2 19:55 - 22:13  (02:17)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 19:54 - 22:13  (02:18)
+username :0           :0               Sun Aug  2 13:01 - down   (02:16)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 13:00 - 15:17  (02:17)
+username :0           :0               Sun Aug  2 08:10 - 08:55  (00:45)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 08:09 - 08:55  (00:46)
+username :0           :0               Sat Aug  1 12:16 - 12:51  (00:34)
+reboot   system boot  5.3.0-62-generic Sat Aug  1 12:12 - 12:51  (00:38)
+
+wtmp begins Sat Aug  1 10:06:19 2020
+```
+
+<br>
+
+`last -5`
+The flag -5 will only dispaly last 5 users who were logged into the system 
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last -5
+username :0           :0               Mon Aug 10 08:26   still logged in
+reboot   system boot  5.4.0-42-generic Mon Aug 10 08:25   still running
+username :0           :0               Sun Aug  9 19:45 - 21:44  (01:58)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 19:44 - 21:44  (01:59)
+username :0           :0               Sun Aug  9 14:39 - 16:14  (01:35)
+```
+
+<br>
+
+`last -R basil`
+This will hide the host field name 
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last -R basil
+wtmp begins Sat Aug  1 10:06:19 2020
+```
+
+<br>
+
+`last -F`
+This command will displaythe login and logout time with their respective dates
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last -F
+username :0           :0               Mon Aug 10 08:26:46 2020   still logged in
+reboot   system boot  5.4.0-42-generic Mon Aug 10 08:25:42 2020   still running
+username :0           :0               Sun Aug  9 19:45:51 2020 - Sun Aug  9 21:44:18 2020  (01:58)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 19:44:37 2020 - Sun Aug  9 21:44:24 2020  (01:59)
+username :0           :0               Sun Aug  9 14:39:33 2020 - Sun Aug  9 16:14:40 2020  (01:35)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 14:38:34 2020 - Sun Aug  9 16:14:47 2020  (01:36)
+username :0           :0               Sun Aug  9 11:27:50 2020 - Sun Aug  9 12:31:21 2020  (01:03)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 11:26:48 2020 - Sun Aug  9 12:31:24 2020  (01:04)
+username :0           :0               Sun Aug  9 08:13:25 2020 - Sun Aug  9 09:54:23 2020  (01:40)
+reboot   system boot  5.4.0-42-generic Sun Aug  9 08:12:23 2020 - Sun Aug  9 09:54:26 2020  (01:42)
+username :0           :0               Sat Aug  8 13:44:30 2020 - Sat Aug  8 15:29:30 2020  (01:45)
+reboot   system boot  5.4.0-42-generic Sat Aug  8 13:43:35 2020 - Sat Aug  8 15:29:34 2020  (01:45)
+username :0           :0               Sat Aug  8 10:16:44 2020 - Sat Aug  8 11:51:14 2020  (01:34)
+reboot   system boot  5.4.0-42-generic Sat Aug  8 10:15:39 2020 - Sat Aug  8 11:51:32 2020  (01:35)
+username :0           :0               Sat Aug  8 07:40:39 2020 - Sat Aug  8 08:46:45 2020  (01:06)
+reboot   system boot  5.4.0-42-generic Sat Aug  8 07:39:39 2020 - Sat Aug  8 08:46:49 2020  (01:07)
+username :0           :0               Fri Aug  7 19:09:25 2020 - down                      (01:26)
+reboot   system boot  5.4.0-42-generic Fri Aug  7 19:08:25 2020 - Fri Aug  7 20:35:45 2020  (01:27)
+username :0           :0               Fri Aug  7 17:00:36 2020 - down                      (00:56)
+reboot   system boot  5.4.0-42-generic Fri Aug  7 16:59:39 2020 - Fri Aug  7 17:56:36 2020  (00:56)
+username :0           :0               Fri Aug  7 12:12:36 2020 - Fri Aug  7 13:34:24 2020  (01:21)
+reboot   system boot  5.4.0-42-generic Fri Aug  7 12:11:30 2020 - Fri Aug  7 13:34:27 2020  (01:22)
+username :0           :0               Fri Aug  7 09:09:14 2020 - down                      (00:35)
+reboot   system boot  5.4.0-42-generic Fri Aug  7 09:08:00 2020 - Fri Aug  7 09:44:31 2020  (00:36)
+username :0           :0               Thu Aug  6 19:50:42 2020 - Thu Aug  6 21:34:41 2020  (01:43)
+reboot   system boot  5.4.0-42-generic Thu Aug  6 19:49:38 2020 - Thu Aug  6 21:34:46 2020  (01:45)
+username :0           :0               Thu Aug  6 17:43:36 2020 - Thu Aug  6 18:18:29 2020  (00:34)
+reboot   system boot  5.3.0-62-generic Thu Aug  6 17:42:39 2020 - Thu Aug  6 18:18:33 2020  (00:35)
+username :0           :0               Thu Aug  6 09:51:45 2020 - Thu Aug  6 13:18:44 2020  (03:26)
+reboot   system boot  5.3.0-62-generic Thu Aug  6 09:49:52 2020 - Thu Aug  6 13:18:48 2020  (03:28)
+username :0           :0               Wed Aug  5 18:52:50 2020 - Wed Aug  5 20:00:12 2020  (01:07)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 18:51:45 2020 - Wed Aug  5 20:00:15 2020  (01:08)
+username :0           :0               Wed Aug  5 13:43:46 2020 - Wed Aug  5 17:15:51 2020  (03:32)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 13:42:01 2020 - Wed Aug  5 17:15:54 2020  (03:33)
+username :0           :0               Wed Aug  5 08:10:20 2020 - Wed Aug  5 11:37:38 2020  (03:27)
+reboot   system boot  5.3.0-62-generic Wed Aug  5 08:09:21 2020 - Wed Aug  5 11:37:40 2020  (03:28)
+username :0           :0               Tue Aug  4 20:23:35 2020 - Tue Aug  4 21:50:36 2020  (01:27)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 20:22:19 2020 - Tue Aug  4 21:50:38 2020  (01:28)
+username :0           :0               Tue Aug  4 16:07:33 2020 - Tue Aug  4 17:34:47 2020  (01:27)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 16:06:40 2020 - Tue Aug  4 17:36:18 2020  (01:29)
+username :0           :0               Tue Aug  4 11:58:58 2020 - Tue Aug  4 14:58:04 2020  (02:59)
+reboot   system boot  5.3.0-62-generic Tue Aug  4 11:58:05 2020 - Tue Aug  4 14:58:08 2020  (03:00)
+username :0           :0               Mon Aug  3 19:26:22 2020 - down                      (00:27)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 19:25:27 2020 - Mon Aug  3 19:54:09 2020  (00:28)
+username :0           :0               Mon Aug  3 11:43:50 2020 - Mon Aug  3 12:44:25 2020  (01:00)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 11:42:54 2020 - Mon Aug  3 12:44:28 2020  (01:01)
+username :0           :0               Mon Aug  3 07:36:06 2020 - Mon Aug  3 08:16:25 2020  (00:40)
+reboot   system boot  5.3.0-62-generic Mon Aug  3 07:35:10 2020 - Mon Aug  3 08:16:27 2020  (00:41)
+username :0           :0               Sun Aug  2 19:55:45 2020 - Sun Aug  2 22:13:25 2020  (02:17)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 19:54:50 2020 - Sun Aug  2 22:13:28 2020  (02:18)
+username :0           :0               Sun Aug  2 13:01:44 2020 - down                      (02:16)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 13:00:44 2020 - Sun Aug  2 15:17:54 2020  (02:17)
+username :0           :0               Sun Aug  2 08:10:19 2020 - Sun Aug  2 08:55:35 2020  (00:45)
+reboot   system boot  5.3.0-62-generic Sun Aug  2 08:09:05 2020 - Sun Aug  2 08:55:37 2020  (00:46)
+username :0           :0               Sat Aug  1 12:16:20 2020 - Sat Aug  1 12:51:14 2020  (00:34)
+reboot   system boot  5.3.0-62-generic Sat Aug  1 12:12:56 2020 - Sat Aug  1 12:51:18 2020  (00:38)
+
+wtmp begins Sat Aug  1 10:06:19 2020
+```
+
+<br>
+
+`last -a`
+This command will put the host column to the very last
+
+<p class="terminal">Terminal</p>
+```
+username@localhost:~/basiccommands$ last -a
+username :0           Mon Aug 10 08:26   still logged in    :0
+reboot   system boot  Mon Aug 10 08:25   still running      5.4.0-42-generic
+username :0           Sun Aug  9 19:45 - 21:44  (01:58)     :0
+reboot   system boot  Sun Aug  9 19:44 - 21:44  (01:59)     5.4.0-42-generic
+username :0           Sun Aug  9 14:39 - 16:14  (01:35)     :0
+reboot   system boot  Sun Aug  9 14:38 - 16:14  (01:36)     5.4.0-42-generic
+username :0           Sun Aug  9 11:27 - 12:31  (01:03)     :0
+reboot   system boot  Sun Aug  9 11:26 - 12:31  (01:04)     5.4.0-42-generic
+username :0           Sun Aug  9 08:13 - 09:54  (01:40)     :0
+reboot   system boot  Sun Aug  9 08:12 - 09:54  (01:42)     5.4.0-42-generic
+username :0           Sat Aug  8 13:44 - 15:29  (01:45)     :0
+reboot   system boot  Sat Aug  8 13:43 - 15:29  (01:45)     5.4.0-42-generic
+username :0           Sat Aug  8 10:16 - 11:51  (01:34)     :0
+reboot   system boot  Sat Aug  8 10:15 - 11:51  (01:35)     5.4.0-42-generic
+username :0           Sat Aug  8 07:40 - 08:46  (01:06)     :0
+reboot   system boot  Sat Aug  8 07:39 - 08:46  (01:07)     5.4.0-42-generic
+username :0           Fri Aug  7 19:09 - down   (01:26)     :0
+reboot   system boot  Fri Aug  7 19:08 - 20:35  (01:27)     5.4.0-42-generic
+username :0           Fri Aug  7 17:00 - down   (00:56)     :0
+reboot   system boot  Fri Aug  7 16:59 - 17:56  (00:56)     5.4.0-42-generic
+username :0           Fri Aug  7 12:12 - 13:34  (01:21)     :0
+reboot   system boot  Fri Aug  7 12:11 - 13:34  (01:22)     5.4.0-42-generic
+username :0           Fri Aug  7 09:09 - down   (00:35)     :0
+reboot   system boot  Fri Aug  7 09:08 - 09:44  (00:36)     5.4.0-42-generic
+username :0           Thu Aug  6 19:50 - 21:34  (01:43)     :0
+reboot   system boot  Thu Aug  6 19:49 - 21:34  (01:45)     5.4.0-42-generic
+username :0           Thu Aug  6 17:43 - 18:18  (00:34)     :0
+reboot   system boot  Thu Aug  6 17:42 - 18:18  (00:35)     5.3.0-62-generic
+username :0           Thu Aug  6 09:51 - 13:18  (03:26)     :0
+reboot   system boot  Thu Aug  6 09:49 - 13:18  (03:28)     5.3.0-62-generic
+username :0           Wed Aug  5 18:52 - 20:00  (01:07)     :0
+reboot   system boot  Wed Aug  5 18:51 - 20:00  (01:08)     5.3.0-62-generic
+username :0           Wed Aug  5 13:43 - 17:15  (03:32)     :0
+reboot   system boot  Wed Aug  5 13:42 - 17:15  (03:33)     5.3.0-62-generic
+username :0           Wed Aug  5 08:10 - 11:37  (03:27)     :0
+reboot   system boot  Wed Aug  5 08:09 - 11:37  (03:28)     5.3.0-62-generic
+username :0           Tue Aug  4 20:23 - 21:50  (01:27)     :0
+reboot   system boot  Tue Aug  4 20:22 - 21:50  (01:28)     5.3.0-62-generic
+username :0           Tue Aug  4 16:07 - 17:34  (01:27)     :0
+reboot   system boot  Tue Aug  4 16:06 - 17:36  (01:29)     5.3.0-62-generic
+username :0           Tue Aug  4 11:58 - 14:58  (02:59)     :0
+reboot   system boot  Tue Aug  4 11:58 - 14:58  (03:00)     5.3.0-62-generic
+username :0           Mon Aug  3 19:26 - down   (00:27)     :0
+reboot   system boot  Mon Aug  3 19:25 - 19:54  (00:28)     5.3.0-62-generic
+username :0           Mon Aug  3 11:43 - 12:44  (01:00)     :0
+reboot   system boot  Mon Aug  3 11:42 - 12:44  (01:01)     5.3.0-62-generic
+username :0           Mon Aug  3 07:36 - 08:16  (00:40)     :0
+reboot   system boot  Mon Aug  3 07:35 - 08:16  (00:41)     5.3.0-62-generic
+username :0           Sun Aug  2 19:55 - 22:13  (02:17)     :0
+reboot   system boot  Sun Aug  2 19:54 - 22:13  (02:18)     5.3.0-62-generic
+username :0           Sun Aug  2 13:01 - down   (02:16)     :0
+reboot   system boot  Sun Aug  2 13:00 - 15:17  (02:17)     5.3.0-62-generic
+username :0           Sun Aug  2 08:10 - 08:55  (00:45)     :0
+reboot   system boot  Sun Aug  2 08:09 - 08:55  (00:46)     5.3.0-62-generic
+username :0           Sat Aug  1 12:16 - 12:51  (00:34)     :0
+reboot   system boot  Sat Aug  1 12:12 - 12:51  (00:38)     5.3.0-62-generic
+
+wtmp begins Sat Aug  1 10:06:19 2020
+```
