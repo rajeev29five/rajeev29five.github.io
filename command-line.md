@@ -596,12 +596,6 @@ This command is used to display the list of all the users to logged into our com
 <p class="terminal">Terminal</p>
 ```
 username@localhost:~/basiccommands$ last
-```
-<br>
-
-```
-Output:
-
 uddeshya :0           :0               Mon Aug 10 08:26   still logged in
 reboot   system boot  5.4.0-42-generic Mon Aug 10 08:25   still running
 uddeshya :0           :0               Sun Aug  9 19:45 - 21:44  (01:58)
@@ -670,33 +664,21 @@ The flag -5 will only dispaly last 5 users who were logged into the system
 <p class="terminal">Terminal</p>
 ```
 username@localhost:~/basiccommands$ last -5
-```
-<br>
-```
-Output:
-
 uddeshya :0           :0               Mon Aug 10 08:26   still logged in
 reboot   system boot  5.4.0-42-generic Mon Aug 10 08:25   still running
 uddeshya :0           :0               Sun Aug  9 19:45 - 21:44  (01:58)
 reboot   system boot  5.4.0-42-generic Sun Aug  9 19:44 - 21:44  (01:59)
 uddeshya :0           :0               Sun Aug  9 14:39 - 16:14  (01:35)
-
 ```
 
 <br>
 
- 
 `last -R basil`
 This will hide the host field name 
 
 <p class="terminal">Terminal</p>
 ```
 username@localhost:~/basiccommands$ last -R basil
-```
-<br>
-```
-Output:
-
 wtmp begins Sat Aug  1 10:06:19 2020
 ```
 
@@ -708,11 +690,6 @@ This command will displaythe login and logout time with their respective dates
 <p class="terminal">Terminal</p>
 ```
 username@localhost:~/basiccommands$ last -F
-```
-<br>
-```
-Output:
-
 uddeshya :0           :0               Mon Aug 10 08:26:46 2020   still logged in
 reboot   system boot  5.4.0-42-generic Mon Aug 10 08:25:42 2020   still running
 uddeshya :0           :0               Sun Aug  9 19:45:51 2020 - Sun Aug  9 21:44:18 2020  (01:58)
@@ -771,7 +748,6 @@ uddeshya :0           :0               Sat Aug  1 12:16:20 2020 - Sat Aug  1 12:
 reboot   system boot  5.3.0-62-generic Sat Aug  1 12:12:56 2020 - Sat Aug  1 12:51:18 2020  (00:38)
 
 wtmp begins Sat Aug  1 10:06:19 2020
-
 ```
 
 <br>
@@ -782,11 +758,6 @@ This command will put the host column to the very last
 <p class="terminal">Terminal</p>
 ```
 username@localhost:~/basiccommands$ last -a
-```
-<br>
-```
-Output:
-
 uddeshya :0           Mon Aug 10 08:26   still logged in    :0
 reboot   system boot  Mon Aug 10 08:25   still running      5.4.0-42-generic
 uddeshya :0           Sun Aug  9 19:45 - 21:44  (01:58)     :0
@@ -845,5 +816,4 @@ uddeshya :0           Sat Aug  1 12:16 - 12:51  (00:34)     :0
 reboot   system boot  Sat Aug  1 12:12 - 12:51  (00:38)     5.3.0-62-generic
 
 wtmp begins Sat Aug  1 10:06:19 2020
-
 ```
