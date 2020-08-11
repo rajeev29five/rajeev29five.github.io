@@ -587,7 +587,7 @@ username@localhost:~/basiccommands$
 </div>
 <br>
 
-## 14. last command
+## 14. last
 
 **last**
 This command is used to display the list of all the users to logged into our computer system. 
